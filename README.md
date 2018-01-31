@@ -1,1 +1,4 @@
-Halp me
+Installed :
+node
+ejs
+express
