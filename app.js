@@ -3,8 +3,8 @@ var ejs = require('ejs');
 app = express();
 
 app.get('/', (req, res) => res.render('accueil.ejs'));
-app.use('/static', express.static(__dirname + '/views/resources'))
-app.use('/static', express.static(__dirname+'/views/css'))
+app.use('/staticres', express.static(__dirname + '/views/resources'))
+app.use('/staticcss', express.static(__dirname+'/views/css'))
 
 
 
