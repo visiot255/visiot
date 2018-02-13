@@ -7,10 +7,23 @@ h1{
     /*margin-top:5%;*/
 }
 .barre_titre{
-    background-color: #14195C;
+    background-color: #000000;
 }
 .home{
-    width:60px;
-    filter:invert(1);
-    float:left;
+  width: 80px;
+  filter:invert(1);
+  float:left;
+}
+.core_text{
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #880000;
+
+}
+.ligne_verticale{
+  width: 5px;
+  border-left:1px;
+  border-color: #008800;
+  height: 70px;
+  margin-left: 10%
 }
