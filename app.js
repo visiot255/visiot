@@ -1,5 +1,7 @@
 var express = require('express');
 var ejs = require('ejs');
+var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 app = express();
 
 app.get('/', (req, res) => res.render('accueil.ejs'));
