@@ -1,17 +1,16 @@
 Hello there
 ===========
 
-Packages installed : 
+Packages installed :
 --------------------
 node
-----
+
 express
--------
+
 ejs
----
+
 path
-----
+
 cookie-parser
--------------
+
 body-parser
------------
