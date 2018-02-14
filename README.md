@@ -1,4 +1,17 @@
-Installed :
+Hello there
+===========
+
+Packages installed : 
+--------------------
 node
-ejs
+----
 express
+-------
+ejs
+---
+path
+----
+cookie-parser
+-------------
+body-parser
+-----------
