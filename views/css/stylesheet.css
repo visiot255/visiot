@@ -1,26 +1,26 @@
 body {margin:0;}
 h1{
-    color:rgb(250,250,252) ;
+    color:#E5f3f5 ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80px;
     text-align:center;
-    /*margin-top:5%;*/
+
 }
 
 h2{
   color:#313131;
-  font-family: 'Sergoe';
+  font-family: Arial Narrow, sans-serif;
   font-size:14pt;
 }
 
 .barre_titre{
-  background-color: #133665 //E5f3f5   fff;
+  background-color: #133665;
 }
 
 .core_text{
   margin-left: 20%;
   margin-right: 20%;
-  background-color: #666;
+  background-color: #CCCCCC;
   border-left: 5px solid #000;
 }
 
