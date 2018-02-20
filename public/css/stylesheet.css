@@ -41,4 +41,6 @@ h2{
   $width: 0.5em;
   left: $sideline-left;
   position: absolute;
+  background-color: red;
+
 }
