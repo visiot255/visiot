@@ -1,10 +1,9 @@
-œbody {margin:0;}
+body {margin:0;}
 h1{
     color:#E5f3f5 ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80px;
     text-align:center;
-
 }
 
 h2{
@@ -21,7 +20,7 @@ h2{
   margin-left: 20%;
   margin-right: 20%;
   background-color: #CCCCCC;
-  border-left: 5px solid #000;
+  /*border-left: 5px solid #000;*/
 }
 
 #home_button{
@@ -37,10 +36,18 @@ h2{
   float: left;
 }
 
-.border_left_test{
+/*.border_left_test{
   $width: 0.5em;
-  left: $sideline-left;
+  left: 2em ;
   position: absolute;
-  background-color: red;
+}*/
 
+.sideline {
+  width: 0.4em;
+  position:absolute;
+  top:0;
+  left: 3em;
+  height:10%;
+  width:0.4em;
+  display:none;
 }
