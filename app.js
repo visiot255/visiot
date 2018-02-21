@@ -9,6 +9,8 @@ var css = express.static(__dirname + '/public');
 
 var accueil = require('./routes/route_accueil.js');
 var resources = require('./routes/route_resources');
+var addArticles = require('./routes/route_add_articles');
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -19,9 +21,8 @@ app.set('view engine', 'ejs');
 
 
 app.use('/', accueil, css);
-
 app.use('/resources', resources, css);
-
+app.use('/adminaddarticles', addArticles, css);
 
 app.listen(3000, () => console.log('Hello world'));
 

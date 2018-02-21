@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" , href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+        <link rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Raleway:400,800" >
+        <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    </head>
+    <body>
+      <form action="../controller/controller_new_page.js">
+      <%- include('partials/header') %>
+      <div class="form-group " style="padding-top:10px">
+          <input class="form-control" id="post_title" name="post_title" type="text" value="Title?">
+      </div>
+      <div class="form-group">
+          <textarea class="form-control" id="markdown" name="post_content"></textarea>
+      </div>
+      <div>
+          <input class='btn btn-default' onclick="" id='submit' name='submit' type='submit' value='Save'>
+          <input class='btn btn-default' id='publish' name='publish' type='submit' value='Publish'>
+      </div>
+  </form>
+  <script>
+        var simplemde = new SimpleMDE();
+  </script>
+      <h1> Hello World! </h1>
+    </body>
+</html>
