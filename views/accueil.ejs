@@ -7,32 +7,61 @@
         <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-      <%- include('partials/header') %>
-      <ul class="liste-accueil">
-        <span class="sideline"></span>
-            <!--div class="border_left"></div-->
-        <div class="core_text">
-            </br>
-            <li>
-                <h2> sous titre 1</h2>
-                <p> Nous avons recensé certaines pratiques qui permettent de respecter
-                les droits des utilisateurs. Nous les avons classés afin que chacun
-                puisse voir les catégories qui l'intéresse (anonymisation coté objet,
-                anonymisation coté serveur...). Les articles sont diponibles ici : </p>
-                <a href=<%= config.urlResources %>><p> Ressources </p> </a>
-            </li>
-            <li>
-                <h2> sous titre 2</h2>
-                <p> Un peu de sensibilisation... Pour la culture gé... Concernant le RGPD </p>
-                <a href=<%= config.urlResources %>><p> Quizz</p> </a>
-            </li>
-            <li>
-                <h2> sous titre 3</h2>
-                <p> About us </p>
-                <a href=<%= config.urlResources %>><p> Qui sommes nous? #on pourrait relier visiot aussi à ce lien </p> </a>
-            </li>
-            </br>
-        </div>
-      </ul>
+        <%- include('partials/header') %>
+        <div>
+            <ul class="liste-accueil">
+            <span class="sideline"></span>
+            <div class="core_text">
+                </br>
+                <p class="intro">
+                    En mai 2018, le RGPD entre en application et la recherche sur 
+                    la technologie 5G dans le monde s’intensifie.
+                </p>
+                <p class="intro">
+                    C’est une période pleine de défis et de possibilités pour
+                    tous ceux qui ont à gérer des gros volumes de données. 
+                </p>
+                <p class="intro">
+                    L’objectif
+                    de <strong>VisIoT</strong> est d’informer tous ceux qui s’intéressent à la conception
+                    et au déploiement d’objets connectés sur les moyens d’action qui
+                    respectent le mieux la vie privée. 
+                </p>
+                <p class="intro">
+                    Cette démarche s’inscrit 
+                    dans le développement par la start-up <a href= "http://visionspol.eu/">Visions</a> d’un label 
+                    qui assure des standards élevés de protection des données. 
+                </p>
+                <p class="intro">
+                    Pour créer VisIoT, Visions a fait appel à <strong><a href="http://visionspfe.cluster020.hosting.ovh.net/223-2/">une équipe d’étudiants </a>
+                    ingénieurs de CentraleSupélec</strong> faisant partie du programme <a href="http://www.latitudes.cc">Latitudes</a>.
+                </p>
+                
+                <li class="onglets-accueil">
+                    <span class="dot"></span>
+                    <h2> sous titre 1</h2>
+                    <p> 
+                    Nous avons recensé certaines pratiques qui permettent de respecter
+                    les droits des utilisateurs. <strong>Important</strong> Nous les avons classés afin que chacun
+                    puisse voir les catégories qui l'intéresse (anonymisation coté objet,
+                    anonymisation coté serveur...). Les articles sont diponibles ici : </p>
+                    <a href=<%= config.urlResources %>><p> Ressources </p> </a>
+                </li>
+                <li class="onglets-accueil">
+                    <span class="dot"></span>
+                    <h2> sous titre 2</h2>
+                    <p> Un peu de <strong>sensibilisation</strong>... Pour la culture gé... Concernant le RGPD </p>
+                    <a href=<%= config.urlResources %>><p> Quizz</p> </a>
+                </li>
+                <li class="onglets-accueil">
+                   <span class="dot"></span>
+                    <h2> sous titre 3</h2>
+                    <p> About us </p>
+                    <a href=<%= config.urlResources %>><p> Qui sommes nous? #on pourrait relier visiot aussi à ce lien </p> </a>
+                </li>
+                </br>
+            </div>
+      < </ul>
+    </div>
     </body>
 </html>

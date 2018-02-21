@@ -34,12 +34,16 @@ h2{
   color:#313131;
   font-family: Nunito;
   font-size:14pt;
-  text-align:justify;
+  text-align:justify;  
+  margin-right:15px;
+  margin-left:15px;
 }
 
 p{
   font-family:Nunito Sans;
-  text-align:justify;
+  text-align:justify;  
+  margin-right:35px;
+  margin-left:35px;
 }
 
 .core_text{
@@ -52,9 +56,17 @@ p{
   /*border-left: 5px solid #000;*/
 }
 
+.intro{
+  font-family:Raleway;
+  font-size:16pt;
+  color:#133665;
+  margin-right:15px;
+  margin-left:15px;
+}
+
 /*##########################################
   ##                                      ##
-  ##                 BLOC                 ##
+  ##                 BLOCS                ##
   ##                                      ##
   ########################################## */
 
@@ -78,6 +90,47 @@ p{
   margin: 0;
 }
 
+
+/*##########################################
+  ##                                      ##
+  ##                 DÉCO                 ##
+  ##                                      ##
+  ########################################## */
+
+
+.liste-accueil{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: relative;
+}
+
+.sideline {
+  width: 0.4em;
+  position:absolute;
+  top:0;
+  left: 3em;
+  height:100%;
+  width:0.4em;
+  display:none;
+  background: linear-gradient(to bottom, $color-turquoise, $color-dark-blue, $color-accent);
+}
+
+.onglets-accueil{
+  position: relative;  
+}
+
+.dot{
+  position: absolute;
+  top: 0.3em;
+  left: 3em;
+  width: calc(3*0.4em);
+  height: calc(3*0.4em);
+  border-radius: calc(3*0.4em)/2;
+  color: #CCCCCC;
+}
+
 /*
 .border_left{
   border-left: 10px;
@@ -91,14 +144,3 @@ p{
   left: 2em ;
   position: absolute;
 }*/
-/*
-.sideline {
-  width: 0.4em;
-  position:absolute;
-  top:0;
-  left: 3em;
-  height:10%;
-  width:0.4em;
-  display:none;
-}
-*/
