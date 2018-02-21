@@ -9,8 +9,9 @@
         <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     </head>
     <body>
-      <form action="../controller/controller_new_page.js">
       <%- include('partials/header') %>
+      <form method = "POST" action="/createNew">
+
       <div class="form-group " style="padding-top:10px">
           <input class="form-control" id="post_title" name="post_title" type="text" value="Title?">
       </div>
@@ -18,7 +19,6 @@
           <textarea class="form-control" id="markdown" name="post_content"></textarea>
       </div>
       <div>
-          <input class='btn btn-default' onclick="" id='submit' name='submit' type='submit' value='Save'>
           <input class='btn btn-default' id='publish' name='publish' type='submit' value='Publish'>
       </div>
   </form>

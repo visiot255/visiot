@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 
 app.use('/', accueil, css);
 app.use('/resources', resources, css);
-app.use('/adminaddarticles', addArticles, css);
+app.use('/addarticles', addArticles, css);
 
 app.listen(3000, () => console.log('Hello world'));
 
