@@ -1,47 +1,94 @@
 body {margin:0;}
+
+/*##########################################
+  ##                                      ##
+  ##                 TEXT                 ##
+  ##                                      ##
+  ########################################## */
+
+
 h1{
+    display:inline;
     color:#E5f3f5 ;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway;
+    font-weight: Extra-Bold 800;
     font-size: 80px;
-    text-align:center;
+}
+
+
+h3{
+  display:inline;
+  color:#FFFFFF ;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 80px;
+}
+
+.container-titre{
+  margin-right:calc(100% /4 - 8.4em);
+  margin-left:calc(100% /4 - 3em);
+  display:inline;
 }
 
 h2{
   color:#313131;
-  font-family: Arial Narrow, sans-serif;
+  font-family: Nunito;
   font-size:14pt;
+  text-align:justify;
 }
 
-.barre_titre{
-  background-color: #133665;
+p{
+  font-family:Nunito Sans;
+  text-align:justify;
 }
 
 .core_text{
   margin-left: 20%;
   margin-right: 20%;
-  background-color: #CCCCCC;
+  background-color: #FFF;
   /*border-left: 5px solid #000;*/
 }
 
-#home_button{
-  float:left;
-  width:80px;
-  filter:invert(1);
+/*##########################################
+  ##                                      ##
+  ##                 BLOC                 ##
+  ##                                      ##
+  ########################################## */
+
+.barre_titre{
+  display:block;
+  background-color: #133665;  
+  position:relative;
+  /* To allow background to be relative */
+  flex-direction: column;
+  color: white;
+  top:0;
+  box-shadow: 0px /*décalage par rapport à la gauche*/ 5px /*décalage par rapport au haut*/20px grey;
 }
 
+.home_button{
+  display:inline;
+  cursor: pointer;
+  margin-left: 0;
+  color:#FFF;
+  padding:10px;
+  margin: 0;
+}
+
+/*
 .border_left{
   border-left: 10px;
   border-left-width: 50px;
   border-left-color: #000000;
   float: left;
 }
-
+*/
 /*.border_left_test{
   $width: 0.5em;
   left: 2em ;
   position: absolute;
 }*/
-
+/*
 .sideline {
   width: 0.4em;
   position:absolute;
@@ -51,3 +98,4 @@ h2{
   width:0.4em;
   display:none;
 }
+*/
