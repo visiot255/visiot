@@ -17,8 +17,8 @@ app.set('view engine', 'ejs');
 //app.get('/', (req, res) => res.render('accueil.ejs'));
 //app.use('/staticres', express.static(__dirname + '/views/resources'));
 //app.use('/staticcss', express.static(__dirname + '/views/css'));
-
-
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.use('/', accueil, css);
 app.use('/resources', resources, css);

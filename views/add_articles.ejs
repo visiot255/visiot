@@ -10,7 +10,7 @@
     </head>
     <body>
       <%- include('partials/header') %>
-      <form method = "POST" action="/createNew">
+      <form id="form" method="POST" action="/addarticles/createNew">
 
       <div class="form-group " style="padding-top:10px">
           <input class="form-control" id="post_title" name="post_title" type="text" value="Title?">
@@ -19,7 +19,7 @@
           <textarea class="form-control" id="markdown" name="post_content"></textarea>
       </div>
       <div>
-          <input class='btn btn-default' id='publish' name='publish' type='submit' value='Publish'>
+          <input id='publish' name='publish' type='submit' value='Publish'>
       </div>
   </form>
   <script>
