@@ -7,6 +7,8 @@
         <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     </head>
     <body>
+      <form action="../controller/controller_new_page.js"
+      <%- include('partials/header') %>
       <div class="form-group " style="padding-top:10px">
           <input class="form-control" id="post_title" name="post_title" type="text" value="Title?">
       </div>
@@ -18,9 +20,8 @@
           <input class='btn btn-default' id='publish' name='publish' type='submit' value='Publish'>
       </div>
   </form>
-  <script type='text/javascript'>
-        var simplemde = new SimpleMDE({ element: document.getElementById('markdown') });
-        simple.value("please Halp");
+  <script>
+        var simplemde = new SimpleMDE();
   </script>
       <h1> Hello World! </h1>
     </body>
