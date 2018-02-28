@@ -1,3 +1,4 @@
+
 body {margin:0;}
 
 /*##########################################
@@ -85,7 +86,7 @@ p{
   /* To allow background to be relative */
   flex-direction: column;
   top:0;
-  box-shadow: 0px /*décalage par rapport à la gauche*/ 5px /*décalage par rapport au haut*/20px grey;
+  box-shadow: 0px /*décalage par rapport à la gauche*/ 5px /*et au haut*/20px grey;
 }
 
 .home_button{
@@ -98,7 +99,7 @@ p{
 }
 
 .liste-accueil{
-  list-style-type: circle;
+  list-style-type: none;
   margin: 0;
   padding-left: 1.7em;
   position: relative;
