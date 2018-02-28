@@ -1,5 +1,8 @@
 
-body {margin:0;}
+body {
+  margin:0;
+  background-image:url(resources/home.png);
+}
 
 /*##########################################
   ##                                      ##
@@ -48,7 +51,6 @@ p{
 }
 
 .core_text{
-  display:block;
   margin-left: 20%;
   margin-top:50px;
   border-radius:5px;
@@ -60,10 +62,10 @@ p{
 
 .intro{
   font-family:Raleway;
-  font-size:16pt;
+  font-size:13pt;
   color:#133665;
-  margin-right:15px;
-  margin-left:15px;
+  margin-right:40px;
+  margin-left:40px;
 }
 
 .text{
@@ -71,6 +73,27 @@ p{
   bottom: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+}
+
+.extraits{
+  font-family:Raleway;
+  font-style: italic;
+  font-size:12pt;
+  color:#245897;
+  margin-right:40px;
+  margin-left:40px
+}
+
+.references{
+  font-family:Raleway;
+  font-size:11pt;
+  color:#245897;
+  margin-right:40px;
+  margin-left:40px
+}
+.cubes{
+  text-align:center;
+  color:#101A55
 }
 
 /*##########################################
@@ -112,47 +135,4 @@ p{
   box-shadow: 5px 5px 8px grey;
   
 }
-/*
-.fond-image {
-  position: relative;
-  text-align: center;
-  color: white;
-}*/
-/*##########################################
-  ##                                      ##
-  ##                 DÉCO                 ##
-  ##                                      ##
-  ########################################## */
-/*
-.sideline {
-  width: 0.4em;
-  position:absolute;
-  top:0;
-  margin-left: 3em;
-  height:100%;
-  width:0.4em;
-  color: blue;
-}
 
-.dot{
-  position: absolute;
-  top:0.2em;
-  width: calc(3*0.4em);
-  height: calc(3*0.4em);
-  border-radius: calc(3*0.4em/2);
-  color: #490D0D;
-}
-*/
-/*
-.border_left{
-  border-left: 10px;
-  border-left-width: 50px;
-  border-left-color: #000000;
-  float: left;
-}
-*/
-/*.border_left_test{
-  $width: 0.5em;
-  left: 2em ;
-  position: absolute;
-}*/
