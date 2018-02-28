@@ -1,6 +1,6 @@
 var secrets = {
   username: 'admin',
-  passwords: 'plzdontfindthissecword'
+  passwords: 'plzdontfindthissecretword'
 };
 
 module.exports = secrets;
