@@ -1,7 +1,7 @@
 
 body {
   margin:0;
-  background-image:url(resources/home.png);
+  background-image:url("../resources/triangles.jpg");
 }
 
 /*##########################################
@@ -93,7 +93,7 @@ p{
 }
 .cubes{
   text-align:center;
-  color:#101A55
+  color:#245897
 }
 
 /*##########################################
