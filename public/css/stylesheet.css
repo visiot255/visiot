@@ -96,6 +96,12 @@ p{
   color:#245897
 }
 
+.footer-text{
+  text-align:center; 
+  color:white;
+   font-family:Raleway;
+}
+
 /*##########################################
   ##                                      ##
   ##                 BLOCS                ##
@@ -134,4 +140,32 @@ p{
   background-color: #CCC;
   box-shadow: 5px 5px 8px grey;
 
+}
+
+.liste-quiz{
+  list-style-type: circle;
+  margin: 0;
+  padding-left: 1.7em;
+  position: relative;
+  display:block;
+  margin-left: 20%;
+  margin-top:50px;
+  border-radius:5px;
+  margin-right: 20%;
+  background-color: #CCC;
+  box-shadow: 5px 5px 8px grey;
+
+}
+
+
+.barre_footer{
+  display:block;
+  background-color: #133665;
+  position:relative;
+  /* To allow background to be relative */
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }
