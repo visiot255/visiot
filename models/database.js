@@ -11,9 +11,10 @@ var seq = new Sequelize('articles', secrets.username, secrets.passwords, {
     acquire: 30000,
     idle: 10000
   },
-
+  // Missing things here!
 });
 
+// checks that everything is fine.
 seq
   .authenticate()
   .then(() => {
@@ -22,3 +23,5 @@ seq
   .catch(err => {
     console.error('Unable to connect to the database:', err);
   });
+
+module.exports = seq;
