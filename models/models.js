@@ -1,6 +1,7 @@
 var Sequelize = require('sequelize');
 var db = require('./database');
 
+/*
 var article = db.define('article', {
   title: {
     type: Sequelize.STRING,
@@ -14,3 +15,4 @@ var article = db.define('article', {
 });
 
 module.exports = {article};
+*/
