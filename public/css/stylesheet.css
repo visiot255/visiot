@@ -1,54 +1,62 @@
+/*##########################################
+  ##                                      ##
+  ##                 Général              ##
+  ##                                      ##
+  ########################################## */
 
 body {
   margin:0;
   background-image:url("../resources/triangles.jpg");
 }
 
-/*##########################################
-  ##                                      ##
-  ##                 TEXT                 ##
-  ##                                      ##
-  ########################################## */
-
-
 h1{
-    display:inline;
-    color:#E5f3f5 ;
-    font-family: Raleway;
-    font-weight: Extra-Bold 800;
-    font-size: 80px;
-}
-
-
-h3{
   display:inline;
-  color:#FFFFFF ;
+  color:#E5f3f5 ;
   font-family: Raleway;
   font-weight: Extra-Bold 800;
   font-size: 80px;
 }
 
+h3{
+display:inline;
+color:#FFFFFF ;
+font-family: Raleway;
+font-weight: Extra-Bold 800;
+font-size: 80px;
+}
+
 .container-titre{
-  margin-right:calc(100% /4 - 8.4em);
-  margin-left:calc(100% /4 - 3em);
-  display:inline;
+margin-right:calc(100% /4 - 8.4em);
+margin-left:calc(100% /4 - 3em);
+display:inline;
 }
 
 h2{
-  color:#313131;
-  font-family: Nunito;
-  font-size:14pt;
-  text-align:justify;
-  margin-right:15px;
-  margin-left:15px;
+color:#313131;
+font-family: Nunito;
+font-size:14pt;
+text-align:justify;
+margin-right:15px;
+margin-left:15px;
 }
 
 p{
-  font-family:Nunito Sans;
-  text-align:justify;
-  margin-right:35px;
-  margin-left:15px;
+font-family:Nunito Sans;
+text-align:justify;
+margin-right:35px;
+margin-left:15px;
 }
+
+.cubes{
+  text-align:center;
+  color:#245897
+}
+
+/*##########################################
+  ##                                      ##
+  ##                 Accueil              ##
+  ##                                      ##
+  ########################################## */
 
 .core_text{
   margin-left: 20%;
@@ -91,15 +99,42 @@ p{
   margin-right:40px;
   margin-left:40px
 }
-.cubes{
-  text-align:center;
-  color:#245897
+
+.liste-accueil{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1.7em;
+  position: relative;
+  display:block;
+  margin-left: 20%;
+  margin-top:50px;
+  border-radius:5px;
+  margin-right: 20%;
+  background-color: #DDD;
+  box-shadow: 5px 5px 8px grey;
+
 }
 
-.footer-text{
-  text-align:center; 
-  color:white;
-   font-family:Raleway;
+/*##########################################
+  ##                                      ##
+  ##                 Quiz                 ##
+  ##                                      ##
+  ########################################## */
+
+
+
+.liste-quiz{
+  list-style-type: circle;
+  margin: 0;
+  padding-left: 1.7em;
+  position: relative;
+  display:block;
+  margin-left: 20%;
+  margin-top:50px;
+  border-radius:5px;
+  margin-right: 20%;
+  background-color: #DDDDDD;
+  box-shadow: 5px 5px 8px grey;
 }
 
 /*##########################################
@@ -127,36 +162,11 @@ p{
   margin: 0;
 }
 
-.liste-accueil{
-  list-style-type: none;
-  margin: 0;
-  padding-left: 1.7em;
-  position: relative;
-  display:block;
-  margin-left: 20%;
-  margin-top:50px;
-  border-radius:5px;
-  margin-right: 20%;
-  background-color: #CCC;
-  box-shadow: 5px 5px 8px grey;
-
+.footer-text{
+  text-align:center; 
+  color:white;
+   font-family:Raleway;
 }
-
-.liste-quiz{
-  list-style-type: circle;
-  margin: 0;
-  padding-left: 1.7em;
-  position: relative;
-  display:block;
-  margin-left: 20%;
-  margin-top:50px;
-  border-radius:5px;
-  margin-right: 20%;
-  background-color: #CCC;
-  box-shadow: 5px 5px 8px grey;
-
-}
-
 
 .barre_footer{
   display:block;
