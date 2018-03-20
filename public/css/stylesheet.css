@@ -59,10 +59,10 @@ margin-left:15px;
   ########################################## */
 
 .core_text{
-  margin-left: 20%;
   margin-top:50px;
-  border-radius:5px;
+  
   margin-right: 20%;
+  border-radius:5px;
   background-color: #CCC;
   /*border-left: 5px solid #000;*/
   box-shadow: 5px 5px 8px grey;
@@ -106,13 +106,67 @@ margin-left:15px;
   padding-left: 1.7em;
   position: relative;
   display:block;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top:50px;
   border-radius:5px;
-  margin-right: 20%;
+  margin-right: 15%;
   background-color: #DDD;
   box-shadow: 5px 5px 8px grey;
 
+}
+
+
+/*##########################################
+  ##                                      ##
+  ##                 Boutons              ##
+  ##                                      ##
+  ########################################## */
+
+.boutonaboutus a {
+  margin:2px;
+  display:block;
+  width:25%;
+  line-height:50pt;
+  text-align:center;
+  vertical-align:middle;
+  background:url("../resources/boutonAboutus_unclick2.jpg") no-repeat;
+  color:white;
+  text-decoration:none;
+}
+
+.boutonaboutus a:hover {
+  background:url("../resources/boutonAboutus_click2.jpg") no-repeat;
+}
+
+.boutonquiz a {
+  margin:2px;
+  display:block;
+  width:25%;
+  line-height:50pt;
+  text-align:center;
+  vertical-align:middle;
+  background:url("../resources/boutonquiz_unclick2.jpg") no-repeat;
+  color:white;
+  text-decoration:none;
+}
+
+.boutonquiz a:hover {
+  background:url("../resources/quizbouton_click2.jpg") no-repeat;
+}
+
+.boutonressources a {
+  display:block;
+  width:25%;
+  line-height:50pt;
+  text-align:center;
+  vertical-align:middle;
+  background:url("../resources/boutonresources_unclick2.jpg") no-repeat;
+  color:white;
+  text-decoration:none;
+}
+
+.boutonressources a:hover {
+  background:url("../resources/boutonresources_click2.jpg") no-repeat;
 }
 
 /*##########################################
@@ -151,6 +205,14 @@ margin-left:15px;
   flex-direction: column;
   top:0;
   box-shadow: 0px /*décalage par rapport à la gauche*/ 5px /*et au haut*/20px grey;
+}
+
+
+.barre_boutons{
+  display:block;
+  position:relative;
+  flex-direction: column;
+  top:0;
 }
 
 .home_button{

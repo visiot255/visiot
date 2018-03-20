@@ -11,6 +11,7 @@ var accueil = require('./routes/route_accueil.js');
 var resources = require('./routes/route_resources');
 var addArticles = require('./routes/route_add_articles');
 var quiz = require('./routes/route_quiz');
+var aboutus = require('./routes/route_aboutus');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -24,7 +25,8 @@ app.use(bodyParser.json());
 app.use('/', accueil, css);
 app.use('/resources', resources, css);
 app.use('/addarticles', addArticles, css);
-app.use('/quiz', quiz,css)
+app.use('/quiz', quiz,css);
+app.use('/aboutus',aboutus,css);
 
 app.listen(3000, () => console.log('Hello world'));
 
