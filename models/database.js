@@ -1,7 +1,7 @@
 var Sequelize = require('sequelize');
 var config = require ('../config');
 var secrets = require('../secrets');
-/*
+
 var seq = new Sequelize('articles', secrets.username, secrets.passwords, {
   host: 'localhost',
   dialect: 'mysql',
@@ -25,4 +25,4 @@ seq
     console.error('Unable to connect to the database:', err);
   });
 
-module.exports = seq; */
+module.exports = seq;
