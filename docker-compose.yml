@@ -6,3 +6,15 @@ services:
       - '.:/app'
     ports:
       - "3000:3000"
+    depends_on:
+      - db
+  db:
+    image: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=pipo
+      - MYSQL_DATABASE=article
+    ports:
+      - "3306:3306"
+    expose:
+      - 3306
