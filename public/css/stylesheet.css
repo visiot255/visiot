@@ -26,8 +26,8 @@ font-size: 80px;
 }
 
 .container-titre{
-margin-right:calc(100% /4 - 8.4em);
-margin-left:calc(100% /4 - 3em);
+margin-right:calc(100% /4 - 6em);
+margin-left:calc(100% /4 - 7.8em);
 display:inline;
 }
 
@@ -131,7 +131,8 @@ margin-left:15px;
   ########################################## */
 
 .boutonaboutus {
-  display:inline;
+  float:right;
+  padding: 20px 16px;
   color:#FFFFFF;
   font-family: Raleway;
   font-weight: Extra-Bold 800;
@@ -198,6 +199,7 @@ margin-left:15px;
   ########################################## */
 
 .barre_titre{
+  overflow: hidden;
   display:block;
   background-color: #133665;
   position:relative;
@@ -216,12 +218,10 @@ margin-left:15px;
 }
 
 .home_button{
+  padding: 0px 14px;
   display:inline;
   cursor: pointer;
-  margin-left: 0;
   color:#FFF;
-  padding:10px;
-  margin: 0;
 }
 
 .footer-text{
