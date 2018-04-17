@@ -2,8 +2,8 @@ var Sequelize = require('sequelize');
 var config = require ('../config');
 var secrets = require('../secrets');
 
-var seq = new Sequelize('articles', secrets.username, secrets.passwords, {
-  host: 'localhost',
+var seq = new Sequelize('article', secrets.user, secrets.password, {
+  host: secrets.port,
   dialect: 'mysql',
   operatorAliases: false,
   pool: {
@@ -12,6 +12,7 @@ var seq = new Sequelize('articles', secrets.username, secrets.passwords, {
     acquire: 30000,
     idle: 10000
   },
+  
   // Missing things here!
 });
 
