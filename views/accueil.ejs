@@ -8,32 +8,26 @@
     </head>
     <body>
         <%- include('partials/header') %>
-        <ul class="liste-accueil" >        
-            </br></br>
-            <div class="barre_boutons">       
 
-                
-                <div class="boutonquiz">
-                    <p>
-                        <a href=<%= config.urlQuiz %>>
-                            <h2><i class="fa fa-question 2x"></i>  Testez vos </br>Connaissances !</h2>
-                        </a>
-                    </p>
-                </div>
-                
-                <div class="boutonressources">
-                    <p>
-                        <a href=<%= config.urlQuiz %>>
-                            <h2><i class="fa fa-book 2x"></i>  Ressources et </br>Articles informatifs </h2>
-                        </a>
-                    </p>
-                </div>
-                
-                <div>
-                <span class="sideline"></span>                
+
+            <ul class="liste-accueil" > 
+                </br></br>
+                    <p >      
+                            <div class="boutonquiz">
+                                    <a href=<%= config.urlQuiz %>>
+                                        <h2><i class="fa fa-question 2x"></i>  Testez vos </br>Connaissances !</h2>
+                                    </a>
+                            </div>
+                            <div class="boutonressources">
+                                <a href=<%= config.urlQuiz %>>
+                                    <h2><i class="fa fa-book 2x"></i>  Ressources et </br>Articles informatifs </h2>
+                                </a>
+                            </div>
+                        </p>
+
+            <div style="clear:left">              
                 </br>
                 <li>
-                    <span class="dot"></span>
                     <p>Nous avons recensé certaines pratiques qui permettent de respecter
                     les droits des utilisateurs. <strong>Important</strong> Nous les avons classées afin que chacun
                     puisse voir les catégories qui l'intéressent (anonymisation coté objet,
@@ -47,10 +41,12 @@
                     <a href=<%= config.urlQuiz %>><p>Quiz</p> </a>
                 </li>
                 </br></br>
-                </div>
             </div>
+            
         </ul>
     </br>
     <%- include('partials/footer') %>
     </body>
 </html>
+
+#flexbox, loatclear
