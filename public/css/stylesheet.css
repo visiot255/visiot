@@ -109,14 +109,10 @@ margin-left:15px;
 }
 
 .liste-accueil{
-  clear:left;
-  list-style-type: none;
-  margin: 0;
   padding-left: 1.7em;
-  position: relative;
-  display:block;
   margin-left: 15%;
   margin-top:50px;
+  margin-bottom:50px;
   border-radius:5px;
   margin-right: 15%;
   background-color: #DDD;
@@ -131,26 +127,30 @@ margin-left:15px;
   ##                                      ##
   ########################################## */
 
+.txtonboutons{
+  color:#FFF;
+  font-size: 14pt;
+  font-family: Nunito;  
+}
+
+
 .boutonaboutus {
   float:right;
   padding: 20px 16px;
   color:#FFFFFF;
-  font-family: Raleway;
-  font-weight: Extra-Bold 800;
-  font-size: 14pt;
+  height:100%;
+  width:calc(max-content(15%,50px))
 }
 
 .boutonquiz a {
-  display:block;
-  padding:20px;
-  margin-right:40px;
-  width:25%;
-  float:right;
-  line-height:50pt;
-  text-align:center;
+  display:flex;
+  width:50%;
+  height:160px;
+  float:center;
   background:url("../resources/boutonquiz_unclick2.jpg") no-repeat;
-  color:white;
   text-decoration:none;
+  margin-right:25%;
+  margin-left:25%;
 }
 
 .boutonquiz a:hover {
@@ -158,16 +158,14 @@ margin-left:15px;
 }
 
 .boutonressources a {
-  padding:20px;
-  margin-left:40px;
-  float:left;
-  display:block;
-  width:25%;
-  line-height:50pt;
-  text-align:center;
+  width:50%;
+  height:160px;
+  float:center;
+  display: flex;
   background:url("../resources/boutonresources_unclick2.jpg") no-repeat;
-  color:white;
   text-decoration:none;
+  margin-right:25%;
+  margin-left:25%;
 }
 
 .boutonressources a:hover {
@@ -180,6 +178,13 @@ margin-left:15px;
   ##                                      ##
   ########################################## */
 
+  .correct{
+    color:#03A73A;
+  }
+
+  .false{
+    color:#AD0000;
+  }
 
 
 .liste-quiz{
