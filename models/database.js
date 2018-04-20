@@ -3,7 +3,7 @@ var config = require ('../config');
 var secrets = require('../secrets');
 
 var seq = new Sequelize('article', secrets.user, secrets.password, {
-  host: secrets.port,
+  host: secrets.host,
   dialect: 'mysql',
   operatorAliases: false,
   pool: {
@@ -25,5 +25,6 @@ seq
   .catch(err => {
     console.error('Unable to connect to the database:', err);
   });
+  seq.sync();
 
 module.exports = seq;

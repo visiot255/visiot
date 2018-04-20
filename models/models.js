@@ -11,7 +11,9 @@ var article = db.define('article', {
   },
   content: {
     type: Sequelize.STRING,
-  },
+  }
 });
 
-module.exports = {article};
+module.exports = {
+  article
+};
