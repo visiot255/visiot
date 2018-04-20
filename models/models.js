@@ -10,7 +10,7 @@ var article = db.define('article', {
     type: Sequelize.STRING,
   },
   content: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
   }
 });
 

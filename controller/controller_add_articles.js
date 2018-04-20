@@ -24,4 +24,6 @@ const createNew = function(req, res){
     })
 };
 
-module.exports = {createNew};
+module.exports = {
+    createNew
+};
