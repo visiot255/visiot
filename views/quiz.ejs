@@ -12,16 +12,18 @@
 
 <div class="liste-quiz">
 </br>
-<p>Vous pourrez trouver le Réglement Général sur la Protection des Données en entier <a href="https://www.eui.eu/Documents/Research/HistoricalArchivesofEU/Règlement-UE-2016-679-du-Parlement-européen-et-du-Conseil-du-27-avril-2016.pdf">ici</a>.</p>    
+
+<div class="boutonRGPD">
+    <a href="https://www.eui.eu/Documents/Research/HistoricalArchivesofEU/Règlement-UE-2016-679-du-Parlement-européen-et-du-Conseil-du-27-avril-2016.pdf">
+        <p class="txtonboutons"></br> <strong> Vous pourrez trouver le Réglement Général sur la Protection des Données en entier ici.</strong> </p>
+    </a>
+</div>
 </br>
     <div id="quizjs"> </div>
     <div id="resultsjs"></div>
     </br>
-    
-    <button id="submitjs">Submit Quizz </button>
-    </br>
-
-
+    <button id="submitjs" style="margin-left:41%; margin-right:41%">Submit Quizz </button>
+    </br></br></br>
 
 <script type="text/javascript" >
     var submitButton=document.getElementById('submitjs');
@@ -34,7 +36,7 @@
                         c: "Une information sensible, comme ma couleur de peau, ma religion."
         },
         correctAnswer : "a",
-        explanation:"Une « donnée à caractère personnel », est définie comme « toute information se rapportant à une personne physique identifiée ou identifiable », donc « qui peut être identifiée, directement ou indirectement, notamment par référence à un identifiant, tel qu'un nom, un numéro d'identification, des données de localisation, un identifiant en ligne, ou à un ou plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale ». Il est également précisé que cela concerne également les données qui ont fait l'objet d'une pseudonymisation « et  qui pourraient être attribuées à une personne physique par le recours à des informations supplémentaires».",
+        explanation:"   Une « donnée à caractère personnel », est définie comme « toute information se rapportant à une personne physique identifiée ou identifiable », donc « qui peut être identifiée, directement ou indirectement, notamment par référence à un identifiant, tel qu'un nom, un numéro d'identification, des données de localisation, un identifiant en ligne, ou à un ou plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale ». Il est également précisé que cela concerne également les données qui ont fait l'objet d'une pseudonymisation « et  qui pourraient être attribuées à une personne physique par le recours à des informations supplémentaires».",
         },
         {
         question: " 2. Quels principes doivent respecter les traitements de données ? (article 5-RGPD)",
@@ -44,7 +46,7 @@
                 c: "Les données collectées doivent être pertinentes, sans forcément avoir à préciser les finalités de leur utilisation."
         },
         correctAnswer : "b",
-        explanation:"On retrouve plusieurs éléments de la loi CNIL de 1978, notamment que les données à caractère personnel doivent être : «  traitées de manière licite »,  «collectées pour des finalités déterminées », « pertinentes […] au regard des finalités pour lesquelles elles sont traitées », « exactes et, si nécessaire, tenues à jour », «conservées sous une forme permettant l'identification des personnes concernées pendant une durée n'excédant pas celle nécessaire au regard des finalités pour lesquelles elles sont traitées », et «traitées de façon à garantir une sécurité appropriée ». Même si le chiffrement des données n’est pas obligatoire, il est fortement conseillé pour garantir la sécurité des données et également de l’entreprise elle-même."
+        explanation:"   On retrouve plusieurs éléments de la loi CNIL de 1978, notamment que les données à caractère personnel doivent être : «  traitées de manière licite »,  «collectées pour des finalités déterminées », « pertinentes […] au regard des finalités pour lesquelles elles sont traitées », « exactes et, si nécessaire, tenues à jour », «conservées sous une forme permettant l'identification des personnes concernées pendant une durée n'excédant pas celle nécessaire au regard des finalités pour lesquelles elles sont traitées », et «traitées de façon à garantir une sécurité appropriée ». Même si le chiffrement des données n’est pas obligatoire, il est fortement conseillé pour garantir la sécurité des données et également de l’entreprise elle-même."
         },
         {
         question:"3. Le consentement (article 7-RGPD) :",
@@ -54,7 +56,7 @@
             c:"L’entreprise ne pourra pas être sanctionnée si les conditions de consentement ne sont pas claires et accessibles.",
         },
         correctAnswer:"b",
-        explanation:"Le responsable doit toujours être en mesure de démontrer que la personne a donné son consentement dans les cas où ce recueil était nécessaire. Bien sûr, beaucoup noient la demande de consentement dans les conditions générales trop longues, mais cette astuce est repoussée par le RGPD puisqu’il précise que la demande devra « être présentée sous une forme qui la distingue clairement », « compréhensible et aisément accessible, et formulée en des termes clairs et simples ». Il doit être également très simple de retirer son consentement, et à tout moment. De plus, « la personne concernée en est informée [de cette liberté] avant de donner son consentement »."
+        explanation:"   Le responsable doit toujours être en mesure de démontrer que la personne a donné son consentement dans les cas où ce recueil était nécessaire. Bien sûr, beaucoup noient la demande de consentement dans les conditions générales trop longues, mais cette astuce est repoussée par le RGPD puisqu’il précise que la demande devra « être présentée sous une forme qui la distingue clairement », « compréhensible et aisément accessible, et formulée en des termes clairs et simples ». Il doit être également très simple de retirer son consentement, et à tout moment. De plus, « la personne concernée en est informée [de cette liberté] avant de donner son consentement »."
         },
         {
         question:"4. Les données sensibles peuvent être collectées… (article 9-RGPD)",
@@ -127,17 +129,16 @@
         },
         correctAnswer:"b",
         explanation:`Les conditions sont les suivantes :
-</br>- Lorsque les traitements sont effectués par une autorité publique,
-</br>- Quand le suivi se fait à grande échelle et de manière systématique des personnes,
-</br>- Quand le traitement se fait à grande échelle et sur des données sensibles,
-</br>Un DPD est un spécialiste du droit et des pratiques de protection des données, donc il n’est pas obligatoirement un membre du personnel. Il doit être « associé, d'une manière appropriée et en temps utile, à toutes les questions relatives à la protection des données à caractère personnel » (art. 38). Il ne peut pas être relevé de ses fonctions ou pénalisé, et il est le contact privilégié pour les personnes concernées par la collecte des données.
-</br>    Ses missions :
-</br>   -Contrôle,
-</br>    -sensibilisation,
-</br>    -formation du personnel,
-</br>    -coopération avec la CNIL.
-</br>    - information et conseil sur le RGPD et autres lois
-`
+            </br>- Lorsque les traitements sont effectués par une autorité publique,
+            </br>- Quand le suivi se fait à grande échelle et de manière systématique des personnes,
+            </br>- Quand le traitement se fait à grande échelle et sur des données sensibles,
+            </br>Un DPD est un spécialiste du droit et des pratiques de protection des données, donc il n’est pas obligatoirement un membre du personnel. Il doit être « associé, d'une manière appropriée et en temps utile, à toutes les questions relatives à la protection des données à caractère personnel » (art. 38). Il ne peut pas être relevé de ses fonctions ou pénalisé, et il est le contact privilégié pour les personnes concernées par la collecte des données.
+            </br>    Ses missions :
+            </br>   - Contrôle,
+            </br>    - Sensibilisation,
+            </br>    - Formation du personnel,
+            </br>    - Coopération avec la CNIL,
+            </br>    - Information et conseil sur le RGPD et autres lois.`
         },        
         {
         question:"9. Le plus petit niveau de découpage des données est appelé:",
@@ -186,7 +187,7 @@
                         +questions[i].answers[letter]
                     +' </label> '
                 );};
-            output.push('<div class="question"> </br>'+questions[i].question+'</div>'+'<div class="answers">'+answer[i].join('')+'</div>');
+            output.push('<div class="question"> </br><strong>'+questions[i].question+'</strong></div>'+'<div class="answers">'+answer[i].join('')+'</div>');
         };
         document.getElementById('quizjs').innerHTML=output.join('');
     
@@ -199,7 +200,7 @@
         resultOutput=[];
         for(var i=0; i<questions.length; i++){
             results.push([]);
-            resultOutput.push('<div class="question"> </br>'+questions[i].question+'</div>'+'<div class="answers">')
+            resultOutput.push('<div class="question"> </br> <strong>'+questions[i].question+'</strong></div>'+'<div class="answers">')
             var answerContainers = document.getElementById('quizjs').querySelectorAll('.answers');
             userAnswer=( answerContainers[i].querySelector('input[name=question'+i+']:checked')||{} ).value;
             if (userAnswer===questions[i].correctAnswer){
@@ -214,7 +215,7 @@
                     }
                     else{
                         results[i].push(
-                        '<p>'+letter+ ': '+questions[i].answers[letter]+' </p> ')
+                        '<p class="correct2">'+letter+ ': '+questions[i].answers[letter]+' </p> ')
                     };
                 };
             }
@@ -234,9 +235,9 @@
                 }
             }
             resultOutput.push(results[i].join(''));
-            resultOutput.push('</div>'+'<div class="Explication"> </br> Réponse :</br>'+ questions[i].explanation+'</div>') ;
+            resultOutput.push('</div>'+'<div class="explication"> </br><strong> Réponse :</strong></br>'+ questions[i].explanation+'</div>') ;
         }
-        document.getElementById('resultsjs').innerHTML=resultOutput.join('')+numCorrect+' out of '+questions.length;
+        document.getElementById('resultsjs').innerHTML=resultOutput.join('')+'</br><div style="text-align:center;font-family:Nunito"><strong>'+numCorrect+' out of '+questions.length+'</strong></div></br>';
         document.getElementById('quizjs').innerHTML=output;
     }
     submitButton.onclick=function(){
@@ -250,10 +251,7 @@
     //display quiz
     buildQuiz(myQuestions,submitButton);
            
-        </script>
-
-
-
+</script>
 
 </div>
 <%- include('partials/footer') %>

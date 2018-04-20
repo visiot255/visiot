@@ -172,6 +172,16 @@ margin-left:15px;
   background:url("../resources/boutonresources_click2.jpg") no-repeat;
 }
 
+.boutonRGPD a {
+  border-radius: 5px;
+  width:400px;
+  height:149px;
+  margin-left:calc(50% - 210px);
+  display: flex;
+  background:url("../resources/banner.jpg") no-repeat;
+  text-decoration:none;
+}
+
 /*##########################################
   ##                                      ##
   ##                 Quiz                 ##
@@ -180,10 +190,37 @@ margin-left:15px;
 
   .correct{
     color:#03A73A;
+    text-align:justify;
   }
 
+  .correct2{
+    text-align:justify;
+  }
   .false{
     color:#AD0000;
+    text-align:justify;
+  }
+
+  .question{
+    font-family:Nunito;
+    font-size:12pt;
+    text-align:justify;
+    margin-right:30px;
+  }
+
+  .answers{
+    font-family:Nunito Sans;
+    font-size:11pt;    
+    text-align:justify;
+    margin-right:30px;
+  }
+
+  .explication{
+    font-family:Nunito Sans;
+    font-size:11pt;    
+    text-align:justify;
+    margin-right:30px;
+    color:#757575;
   }
 
 
