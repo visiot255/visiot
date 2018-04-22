@@ -9,9 +9,14 @@ const createNew = function(req, res){
     var content = req.body.post_content;
     var parent = req.body.post_parent;
 
-    var newArticle = new Article({
-
+    Article.sync().then(() => {
+      return Article.create({
+        title: title,
+        content: content,
+        parent: parent
+      })
     })
+    console.log('Article added to the database');
 };
 
 module.exports = {createNew};
