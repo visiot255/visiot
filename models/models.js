@@ -10,8 +10,10 @@ var article = db.define('article', {
     type: Sequelize.STRING,
   },
   content: {
-    type: Sequelize.STRING,
-  },
+    type: Sequelize.TEXT,
+  }
 });
 
-module.exports = {article};
+module.exports = {
+  article
+};

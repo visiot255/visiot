@@ -1,7 +1,7 @@
 var express = require('express');
 var config = require('../config');
-var Article = require('../models/models');
-
+var model = require('../models/models');
+var Sequelize = require('sequelize');
 
 const createNew = function(req, res){
 
@@ -9,14 +9,22 @@ const createNew = function(req, res){
     var content = req.body.post_content;
     var parent = req.body.post_parent;
 
-    Article.sync().then(() => {
-      return Article.create({
-        title: title,
-        content: content,
-        parent: parent
-      })
+    model.article.findOrCreate({where:{title: title}, defaults: {content: content, parent: parent}})
+    .spread((article, created) => {
+        console.log(article.get({
+            plain:true
+        }))
+        console.log(created)
+        if (created){
+            console.log('article added to database');
+        } else {
+            console.log('article already exists')
+        }
+        res.redirect(config.urlAccueil)
     })
     console.log('Article added to the database');
 };
 
-module.exports = {createNew};
+module.exports = {
+    createNew
+};

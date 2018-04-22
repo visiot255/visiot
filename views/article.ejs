@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" , href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+        <link rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Raleway:400,800" >
+        <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    </head>
+    <body>
+        
+    <%- include('partials/header') %>
+    <%- content %>
+    <% if (parent) { %>
+    <a href=<%= parent.title %>><%= parent.title %></a><br>
+    <% } %>
+    <% children.forEach(function(child){ %>
+        <a href=<%= child.title %>><%= child.title %></a><br>
+    <% }) %>
+    <% siblings.forEach(function(sibling){ %>
+        <a href=<%=  sibling.title %>><%= sibling.title %></a><br>
+    <% }) %>
+    <%- include('partials/footer') %>
+    </body>
+</html>

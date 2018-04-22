@@ -7,11 +7,7 @@ var app = express();
 
 var css = express.static(__dirname + '/public');
 
-var accueil = require('./routes/route_accueil.js');
-var resources = require('./routes/route_resources');
-var addArticles = require('./routes/route_add_articles');
-var quiz = require('./routes/route_quiz');
-var aboutus = require('./routes/route_aboutus');
+var router = require('./router')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -22,11 +18,11 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/', accueil, css);
-app.use('/resources', resources, css);
-app.use('/addarticles', addArticles, css);
-app.use('/quiz', quiz,css);
-app.use('/aboutus',aboutus,css);
+app.use('/', router.accueil, css);
+app.use('/resources', router.resources, css);
+app.use('/addarticles', router.addArticles, css);
+app.use('/quiz', router.quiz,css);
+app.use('/aboutus', router.aboutus,css);
 
 app.listen(3000, () => console.log('Hello world'));
 

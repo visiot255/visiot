@@ -11,42 +11,21 @@
 
 
             <ul class="liste-accueil" > 
-                </br></br>
+                </br>
                     <p >      
-                            <div class="boutonquiz">
-                                    <a href=<%= config.urlQuiz %>>
-                                        <h2><i class="fa fa-question 2x"></i>  Testez vos </br>Connaissances !</h2>
-                                    </a>
-                            </div>
                             <div class="boutonressources">
-                                <a href=<%= config.urlQuiz %>>
-                                    <h2><i class="fa fa-book 2x"></i>  Ressources et </br>Articles informatifs </h2>
+                                <a href=<%= config.urlResources %>>
+                                    <p class="txtonboutons"></br><i class="fa fa-book 2x"></i>  Ressources et Articles </br> informatifs </p>
                                 </a>
                             </div>
+                            <div class="boutonquiz">
+                                    <a href=<%= config.urlQuiz %>>
+                                        <p class="txtonboutons"> </br><i class="fa fa-question 2x"></i>  Testez vos connaissances sur</br> le RGPD</p>
+                                    </a>
+                            </div>
                         </p>
-
-            <div style="clear:left">              
-                </br>
-                <li>
-                    <p>Nous avons recensé certaines pratiques qui permettent de respecter
-                    les droits des utilisateurs. <strong>Important</strong> Nous les avons classées afin que chacun
-                    puisse voir les catégories qui l'intéressent (anonymisation coté objet,
-                    anonymisation coté serveur...). Les articles sont diponibles ici : </p>
-                    <a href=<%= config.urlResources %>><p> Ressources </p> </a>
-                </li>
-                <li class="onglets-accueil">
-                    <span class="dot"></span>
-                    <p> Êtes-vous au point concernant le RGPD et la protection des données ? 
-                        </br>Un peu de <strong>sensibilisation</strong>... Pour la culture générale... Concernant le RGPD </p>
-                    <a href=<%= config.urlQuiz %>><p>Quiz</p> </a>
-                </li>
-                </br></br>
-            </div>
-            
         </ul>
-    </br>
+                            
     <%- include('partials/footer') %>
     </body>
 </html>
-
-#flexbox, loatclear

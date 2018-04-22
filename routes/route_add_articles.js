@@ -7,7 +7,6 @@ router.get('/', function(req,res){
   res.render('add_articles', {config: config});
 });
 
-router.post('/createNew', function(req, res){
-  console.log(req.body);
-});
+router.route('/createNew').post(controller.createNew);
+
 module.exports = router;
