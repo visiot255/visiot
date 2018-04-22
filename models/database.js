@@ -12,7 +12,7 @@ var seq = new Sequelize('article', secrets.user, secrets.password, {
     acquire: 30000,
     idle: 10000
   },
-  
+
   // Missing things here!
 });
 

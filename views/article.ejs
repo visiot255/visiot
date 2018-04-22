@@ -9,15 +9,24 @@
         <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     </head>
     <body>
-        
+
     <%- include('partials/header') %>
     <%- content %>
-    <% if (parent) { %>
+    <div>
+      <p> root </p>
+      <% root.forEach(function(root){ %>
+      <a href=<%= root.title %>><%= root.title%></a><br>
+      <% }) %>
+    </div>
+    <p> parent </p>
+    <% if(parent){ %>
     <a href=<%= parent.title %>><%= parent.title %></a><br>
     <% } %>
+    <p> children </p>
     <% children.forEach(function(child){ %>
         <a href=<%= child.title %>><%= child.title %></a><br>
     <% }) %>
+    <p> siblings </p>
     <% siblings.forEach(function(sibling){ %>
         <a href=<%=  sibling.title %>><%= sibling.title %></a><br>
     <% }) %>

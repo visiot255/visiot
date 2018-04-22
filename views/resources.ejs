@@ -11,6 +11,11 @@
     <body>
       <%- include('partials/header') %>
     <h1> Bienvenue sur la page d'accueil des articles! </h1>
+
+    <% root.forEach(function(root){ %>
+    <a href=<%= root.title %>><%= root.title%></a><br>
+    <% }) %>
+
     <%- include('partials/footer') %>
     </body>
 </html>
