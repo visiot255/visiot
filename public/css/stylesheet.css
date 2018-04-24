@@ -8,7 +8,7 @@ body {
   margin:0;
   background-image:url("../resources/triangles.jpg");
 }
-
+/*
 h1{
   display:inline;
   color:#E5f3f5 ;
@@ -23,6 +23,22 @@ color:#FFFFFF ;
 font-family: Raleway;
 font-weight: Extra-Bold 800;
 font-size: 80px;
+}
+*/
+#titre_vis{
+  display:inline;
+  color:#E5f3f5 ;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 80px;
+}
+
+#titre_iot{
+  display:inline;
+  color:#FFFFFF ;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 80px;
 }
 
 .container-titre{
@@ -68,7 +84,7 @@ margin-left:15px;
 
 .core_text{
   margin-top:50px;
-  margin-right: 20%;  
+  margin-right: 20%;
   margin-left: 20%;
   border-radius:5px;
   background-color: #CCC;
@@ -130,7 +146,7 @@ margin-left:15px;
 .txtonboutons{
   color:#FFF;
   font-size: 14pt;
-  font-family: Nunito;  
+  font-family: Nunito;
 }
 
 
@@ -210,14 +226,14 @@ margin-left:15px;
 
   .answers{
     font-family:Nunito Sans;
-    font-size:11pt;    
+    font-size:11pt;
     text-align:justify;
     margin-right:30px;
   }
 
   .explication{
     font-family:Nunito Sans;
-    font-size:11pt;    
+    font-size:11pt;
     text-align:justify;
     margin-right:30px;
     color:#757575;
@@ -270,7 +286,7 @@ margin-left:15px;
 }
 
 .footer-text{
-  text-align:center; 
+  text-align:center;
   color:white;
    font-family:Raleway;
 }

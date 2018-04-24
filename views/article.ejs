@@ -11,8 +11,10 @@
     <body>
 
     <%- include('partials/header') %>
-    <%- content %>
-    <div>
+    <div class="core_text">
+      <%- content %>
+    </div>
+    <div class ="root_articles">
       <p> root </p>
       <% root.forEach(function(root){ %>
       <a href=<%= root.title %>><%= root.title%></a><br>
