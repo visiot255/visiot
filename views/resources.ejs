@@ -10,12 +10,17 @@
     </head>
     <body>
       <%- include('partials/header') %>
-    <h1> Bienvenue sur la page d'accueil des articles! </h1>
+      <div class="arborescence">
+        <% root.forEach(function(root){ %>
+        <a href=<%= root.title %>><%= root.title%></a><br>
+        <% }) %>
+      </div>
+      <div class="core_text">
+        <h1> Bienvenue sur la page d'accueil des articles! </h1>
+      </div>
 
-    <% root.forEach(function(root){ %>
-    <a href=<%= root.title %>><%= root.title%></a><br>
-    <% }) %>
 
-    <%- include('partials/footer') %>
+
+      <%- include('partials/footer') %>
     </body>
 </html>
