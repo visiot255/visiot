@@ -5,10 +5,10 @@
     <link rel="stylesheet" , href="css/stylesheet.css">
     <link rel="stylesheet" , href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Raleway:400,800" >
     <link rel="stylesheet" , href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 </head>
 <body>
-    <%- include('partials/header') %>   
+    <%- include('partials/header') %>
 
 <div class="liste-quiz">
 </br>
@@ -98,7 +98,7 @@
             De plus, si des données ne sont plus nécessaires (principe de minimisation), le consentement de l’intéressé a été retiré, ou si le traitement initial était illicite le demandeur peut faire recours au droit « d’oubli » des données. Ce droit n’est cependant pas absolu. Notamment, il existe des exceptions :
             </br>-lorsque le traitement est nécessaire à la liberté d’expression ou d’information
             </br>- lorsque le traitement résulte d’une obligation légale.`
-        },        
+        },
         {
         question:"6. La responsabilité du responsable du traitement (article 24-RGPD)",
         answers:{
@@ -107,9 +107,9 @@
             c:"L’entreprise doit prendre  des mesures techniques et organisationnelles appropriées pour s'assurer et pouvoir démontrer que le traitement de leurs données respecte le RGPD."
         },
         correctAnswer:"c",
-        explanation:`Le responsable du traitement sera « responsable du respect » de ces critères. L’entreprise devra mettre en œuvre « des mesures techniques et organisationnelles appropriées pour s'assurer et être en mesure de démontrer que le traitement est effectué conformément au présent règlement ». 
+        explanation:`Le responsable du traitement sera « responsable du respect » de ces critères. L’entreprise devra mettre en œuvre « des mesures techniques et organisationnelles appropriées pour s'assurer et être en mesure de démontrer que le traitement est effectué conformément au présent règlement ».
             Cette disposition impliquera toujours une analyse de risques dès lors que « le traitement peut donner lieu à une discrimination, à un vol ou une usurpation d'identité, à une perte financière, à une atteinte à la réputation, à une perte de confidentialité de données protégées par le secret professionnel, à un renversement non autorisé du processus de pseudonymisation ou à tout autre dommage économique ou social important ».`
-        },        
+        },
         {
         question:"7. Protection des données dès la conception et protection des données par défaut :</br> Le <strong> Privacy by design </strong>  c’est … (article 25-RGPD)",
         answers:{
@@ -139,7 +139,7 @@
             </br>    - Formation du personnel,
             </br>    - Coopération avec la CNIL,
             </br>    - Information et conseil sur le RGPD et autres lois.`
-        },        
+        },
         {
         question:"9. Le plus petit niveau de découpage des données est appelé:",
         answers:{
@@ -161,7 +161,7 @@
         },
         correctAnswer:"b",
         explanation:""
-        },        
+        },
         {
         question:"Bonus. Le RGPD entre en vigueur le :",
         answers:{
@@ -171,9 +171,9 @@
         },
         correctAnswer:"a",
         explanation:""
-        },       
+        },
     ];
-    
+
     function buildQuiz (questions, submitButton) {
     function showQuestions(questions ){
         var output=[];
@@ -190,8 +190,8 @@
             output.push('<div class="question"> </br><strong>'+questions[i].question+'</strong></div>'+'<div class="answers">'+answer[i].join('')+'</div>');
         };
         document.getElementById('quizjs').innerHTML=output.join('');
-    
-    
+
+
     function showResults(questions){
         var userAnswer='';
         var numCorrect=0;
@@ -219,7 +219,7 @@
                     };
                 };
             }
-            else{ 
+            else{
                 for (letter in questions[i].answers){
                     if (letter===questions[i].correctAnswer){
                         results[i].push(
@@ -231,7 +231,7 @@
                     else{
                         results[i].push(
                         ' <p class="false">'+letter+ ': '+questions[i].answers[letter]+' </p> ')
-                    };    
+                    };
                 }
             }
             resultOutput.push(results[i].join(''));
@@ -247,10 +247,10 @@
     }
     showQuestions(questions);
     };
-    
+
     //display quiz
     buildQuiz(myQuestions,submitButton);
-           
+
 </script>
 
 </div>
