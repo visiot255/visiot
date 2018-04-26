@@ -237,7 +237,7 @@
             resultOutput.push(results[i].join(''));
             resultOutput.push('</div>'+'<div class="explication"> </br><strong> Réponse :</strong></br>'+ questions[i].explanation+'</div>') ;
         }
-        document.getElementById('resultsjs').innerHTML=resultOutput.join('')+'</br><div style="text-align:center;font-family:Nunito"><strong>'+numCorrect+' out of '+questions.length+'</strong></div></br>';
+        document.getElementById('resultsjs').innerHTML=resultOutput.join('')+'</br><div style="text-align:center;font-family:Nunito"><strong>'+numCorrect+' sur '+questions.length+'</strong></div></br>';
         document.getElementById('quizjs').innerHTML=output;
     }
     submitButton.onclick=function(){
