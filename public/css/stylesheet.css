@@ -125,7 +125,11 @@ margin-left:15px;
 }
 
 .liste-accueil{
-  padding-left: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 400px;
   margin-left: 20%;
   margin-top:50px;
   margin-bottom:50px;
@@ -133,7 +137,7 @@ margin-left:15px;
   margin-right: 20%;
   background-color: #DDD;
   box-shadow: 5px 5px 8px grey;
-
+  justify-content: space-around;
 }
 
 /*##########################################
@@ -143,10 +147,10 @@ margin-left:15px;
   ########################################## */
 
 .arborescence{
-  float;
-  padding-left: 1.7em;
-  margin-left: 2%;
-  margin-top:50px;
+  float:auto;
+  padding-left : 1.7em;
+  margin-left : 2%;
+  margin-top : 50px;
   margin-bottom:50px;
   border-radius:5px;
   margin-right: 82%;
@@ -167,44 +171,50 @@ margin-left:15px;
   font-family: Nunito;
 }
 
-
 .boutonaboutus {
   float:right;
   padding: 20px 16px;
-  color:#FFFFFF;
+  color:#FFF;
   height:100%;
   width:calc(max-content(15%,50px))
 }
 
-.boutonquiz a {
-  display:flex;
-  width:50%;
-  height:160px;
-  float:center;
-  background:url("../resources/boutonquiz_unclick2.jpg") no-repeat;
+.boutonressources {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  align-self: center;
+  text-align: center;
+  background:url("../resources/boutonresources_unclick2.jpg") no-repeat;
+}
+
+.boutonressources a {
+  width: 100%;
+  height: 120px;
   text-decoration:none;
-  margin-right:25%;
-  margin-left:25%;
+}
+
+.boutonressources a:hover {
+  background:url("../resources/boutonresources_click2.jpg") no-repeat;
+}
+
+.boutonquiz{
+  width: 100%;
+  height: 120px;
+  display:flex;
+  align-self: center;
+  text-align: center;
+  background:url("../resources/boutonquiz_unclick2.jpg") no-repeat;
+}
+
+.boutonquiz a {
+  text-decoration:none;
 }
 
 .boutonquiz a:hover {
   background:url("../resources/quizbouton_click2.jpg") no-repeat;
 }
 
-.boutonressources a {
-  width:50%;
-  height:160px;
-  float:center;
-  display: flex;
-  background:url("../resources/boutonresources_unclick2.jpg") no-repeat;
-  text-decoration:none;
-  margin-right:25%;
-  margin-left:25%;
-}
-
-.boutonressources a:hover {
-  background:url("../resources/boutonresources_click2.jpg") no-repeat;
-}
 
 .boutonRGPD a {
   border-radius: 5px;
