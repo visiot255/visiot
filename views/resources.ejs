@@ -12,7 +12,7 @@
       <%- include('partials/header') %>
       <div class="arborescence">
         <% root.forEach(function(root){ %>
-        <a href=<%= root.title %>><%= root.title%></a><br>
+        <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
         <% }) %>
       </div>
       <div class="core_text">

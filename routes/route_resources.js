@@ -16,8 +16,10 @@ router.get('/', function(req, res){
 });
 //Beware there can be a redundancy between a root article and parent.
 router.get('/:id', function(req, res){
-  models.article.findOne({
-    where: {title: req.params.id}}).then(article => {
+      var idtest = req.params.id.split('_').join(' ');
+
+      console.log(idtest);
+  models.article.findOne({where: {title: idtest}}).then(article => {
     models.article.findOne({
       where: {title: article.parent}}).then(parent => {
       models.article.findAll({
@@ -25,7 +27,8 @@ router.get('/:id', function(req, res){
           parent: {
             [Op.and]: {
               [Op.eq]: article.parent,
-              [Op.ne]: 'root'}},
+              [Op.ne]: 'root'}
+            },
            title: {
              [Op.ne]: article.title}
            }}).then(siblings => {
@@ -37,7 +40,7 @@ router.get('/:id', function(req, res){
               title: {
                  [Op.ne]: article.title}}}).then(root => {
               var htmlContent = converter.makeHtml(article.content);
-              res.render('article', {config: config, content: htmlContent, children: children, parent: parent, siblings:siblings, root: root});
+              res.render('article', {config: config, content: htmlContent, children: children, parent: parent, siblings:siblings, root: root, article: article});
             })
           })
         })
