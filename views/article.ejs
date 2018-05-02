@@ -12,13 +12,16 @@
 
     <%- include('partials/header') %>
     <div class="core_text">
+      <h1 <%= article.title %> >
       <%- content %>
     </div>
     <div class ="arborescence">
       <div class ="root_articles">
         <p> root </p>
         <% root.forEach(function(root){ %>
-        <a href=<%= root.title %>><%= root.title%></a><br>
+          <% if (root.title !== parent.title){ %>
+            <a href=<%= root.title %>><%= root.title%></a><br>
+          <% } %>
         <% }) %>
       </div>
       <p> parent </p>
@@ -33,6 +36,7 @@
       <% siblings.forEach(function(sibling){ %>
         <a href=<%=  sibling.title %>><%= sibling.title %></a><br>
       <% }) %>
+    </div>
       <%- include('partials/footer') %>
     </body>
 </html>

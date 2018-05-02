@@ -37,7 +37,7 @@ router.get('/:id', function(req, res){
               title: {
                  [Op.ne]: article.title}}}).then(root => {
               var htmlContent = converter.makeHtml(article.content);
-              res.render('article', {config: config, content: htmlContent, children: children, parent: parent, siblings:siblings, root: root});
+              res.render('article', {config: config, content: htmlContent, children: children, parent: parent, siblings:siblings, root: root, article: article});
             })
           })
         })
