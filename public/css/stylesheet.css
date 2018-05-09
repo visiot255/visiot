@@ -8,7 +8,6 @@ body {
   margin:0;
   background-image:url("../resources/triangles.jpg");
 }
-<<<<<<< HEAD
 
 h1{
   color:#133665;
@@ -45,9 +44,6 @@ h4{
   margin-left: 40px;
   margin-right: 40px;
 }
-=======
-
->>>>>>> 442dd6faf9edb3dcef251fc602bd3ee655dace25
 
 #titre_vis{
   display:inline;
@@ -357,22 +353,14 @@ a.button {
    font-family:Raleway;
 }
 
-.barre_footer_2{
-  background-color: #133665;
-  position:absolute;
-  /* To allow background to be relative */
-  bottom: 0%;
-  left: 0;
-  right:0;
-  padding: 1rem;
-  text-align: center;
-}
-
 .barre_footer{
+  display:block;
   background-color: #133665;
+  position:relative;
   /* To allow background to be relative */
+  flex-direction: column;
+  bottom: 0;
   left: 0;
-  right:0;
   padding: 1rem;
   text-align: center;
 }
