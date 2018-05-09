@@ -8,29 +8,51 @@ body {
   margin:0;
   background-image:url("../resources/triangles.jpg");
 }
-/*
+
 h1{
-  display:inline;
-  color:#E5f3f5 ;
+  color:#133665;
   font-family: Raleway;
   font-weight: Extra-Bold 800;
-  font-size: 80px;
+  font-size: 30pt;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h2{
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 25pt;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 h3{
-display:inline;
-color:#FFFFFF ;
-font-family: Raleway;
-font-weight: Extra-Bold 800;
-font-size: 80px;
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 20pt;
+  margin-left: 40px;
+  margin-right: 40px;
 }
-*/
+
+h4{
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 17pt;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 #titre_vis{
   display:inline;
   color:#E5f3f5 ;
   font-family: Raleway;
   font-weight: Extra-Bold 800;
   font-size: 80px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #titre_iot{
@@ -39,6 +61,8 @@ font-size: 80px;
   font-family: Raleway;
   font-weight: Extra-Bold 800;
   font-size: 80px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .container-titre{
@@ -46,7 +70,7 @@ margin-right:calc(100% /4 - 6em);
 margin-left:calc(100% /4 - 7.8em);
 display:inline;
 }
-
+/*
 h2{
 color:#313131;
 font-family: Nunito;
@@ -55,12 +79,13 @@ text-align:justify;
 margin-right:15px;
 margin-left:15px;
 }
-
+*/
 p{
-font-family:Nunito Sans;
-text-align:justify;
-margin-right:35px;
-margin-left:15px;
+  font-family:Raleway;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:40px;
 }
 
 .cubes{
@@ -90,14 +115,6 @@ margin-left:15px;
   background-color: #DDD;
   /*border-left: 5px solid #000;*/
   box-shadow: 5px 5px 8px grey;
-}
-
-.intro{
-  font-family:Raleway;
-  font-size:13pt;
-  color:#133665;
-  margin-right:40px;
-  margin-left:40px;
 }
 
 .text{
@@ -147,6 +164,13 @@ margin-left:15px;
   ##               Articles               ##
   ##                                      ##
   ########################################## */
+.titre_article{
+  text-align: center;
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 30pt;
+}
 
 .arborescence{
   float:auto;

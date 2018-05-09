@@ -11,12 +11,12 @@
 
     <%- include('partials/header') %>
     <div class="core_text">
-      <h1 style ='text-align: center'> <%= article.title %></h1>
+      <h1 class="titre_article"> <%= article.title %></h1>
       <%- content %>
       <br/>
       <p> Si vous souhaitez ajouter un article de même parent que cet article courant, cliquez ici : </p>
       <a href=<%= '../addarticles/' + article.parent.split(' ').join('_') %> class="button"> Ajouter un article de même parent</a>
-      <p> Si vou souhaitez ajouter un article de parent cet article courant, cliquez ici :
+      <p> Si vous souhaitez ajouter un article de parent cet article courant, cliquez ici :
       <br/><br/>
       <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button"> AJouter un article  descendant</a>
       <br/><br/>
