@@ -365,3 +365,16 @@ a.button {
   padding: 1rem;
   text-align: center;
 }
+
+.barre_footer_2{
+  display:block;
+  background-color: #133665;
+  position:absolute;
+  /* To allow background to be relative */
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+}
