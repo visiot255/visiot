@@ -8,7 +8,7 @@
         <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-
+<div class="container_articles">
     <%- include('partials/header') %>
     <div class="core_text">
       <h1 class="titre_article"> <%= article.title %></h1>
@@ -50,7 +50,8 @@
       <% siblings.forEach(function(sibling){ %>
         <a href=<%=  sibling.title.split(' ').join('_') %>><%= sibling.title %></a><br>
       <% }) %>
-    </div>
+    </div>7
+</div>
       <%- include('partials/footer') %>
     </body>
 </html>

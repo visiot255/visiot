@@ -109,6 +109,8 @@ p{
   ########################################## */
 
 .core_text{
+  display: flex;
+  align-self: center;
   margin-top:50px;
   margin-right: 20%;
   margin-left: 20%;
@@ -183,6 +185,8 @@ p{
   margin-right: 82%;
   background-color: #DDD;
   box-shadow: 5px 5px 8px grey;
+  display: flex;
+  align-self: center;
 }
 
 a.button {
@@ -193,6 +197,15 @@ a.button {
     text-decoration: none;
     color: initial;
 }
+
+.container_articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 /*##########################################
   ##                                      ##
