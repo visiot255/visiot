@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
         <link rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Raleway:400,800" >
         <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     </head>
     <body>
 
@@ -14,13 +13,28 @@
     <div class="core_text">
       <h1 style ='text-align: center'> <%= article.title %></h1>
       <%- content %>
+      <br/>
+      <p> Si vous souhaitez ajouter un article de même parent que cet article courant, cliquez ici : </p>
+      <a href=<%= '../addarticles/' + article.parent.split(' ').join('_') %> class="button"> Ajouter un article de même parent</a>
+      <p> Si vou souhaitez ajouter un article de parent cet article courant, cliquez ici :
+      <br/><br/>
+      <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button"> AJouter un article  descendant</a>
+      <br/><br/>
     </div>
+
     <div class ="arborescence">
       <div class ="root_articles">
+        <!-- The following is rather heavy writing but it is to avoid redundancy -->
         <p> root </p>
         <% root.forEach(function(root){ %>
-          <% if (root.title !== parent.title){ %>
-            <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
+          <% if (parent) { %>
+            <% if (root.title !== parent.title){ %>
+              <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
+            <% } %>
+          <% } else { %>
+            <% if (root.title !== article.title){ %>
+              <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
+            <% } %>
           <% } %>
         <% }) %>
       </div>

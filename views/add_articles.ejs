@@ -11,14 +11,20 @@
     <body>
       <%- include('partials/header') %>
       <form id="form" method="POST" action="/addarticles/createNew">
-
+<!-- all the following forms will be stored in the database -->
       <div class="form-group " style="padding-top:10px">
           <input class="form-control" id="post_title" name="post_title" type="text" placeholder="Title">
       </div>
       <p> Donner 'root' comme parent à votre article si ne souhaitez pas lui donner un parent </p>
       <div class="form-group " style="padding-top:10px">
-        <input class="form-control" id="post_title" name="post_parent" type="text" placeholder="Parent">
+        <!-- If someone wants to add a new article with the same parent as another
+      the parent's title will be displayed right on top of the form for the parent's name -->
+        <% if (article) { %>
+          <p style="color: #FF0000"> Ajoutez ce titre d'article parent dans le champs ci-dessous '<%= article.title %>' </p>
+        <% } %>
+        <input class="form-control" id="post_parent" name="post_parent" type="text" placeholder="Parent">
       </div>
+      <!-- dynamic markdown interpretor below -->
       <div class="form-group">
           <textarea class="form-control" id="markdown" name="post_content"></textarea>
       </div>

@@ -6,7 +6,7 @@ var Sequelize = require('sequelize');
 const createNew = function(req, res){
 
     var title = req.body.post_title;
-    var titleId = title.replace(/ /g, '_');
+    var titleId = title.split(' ').join('_');
     var content = req.body.post_content;
     var parent = req.body.post_parent;
 

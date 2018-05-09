@@ -16,10 +16,10 @@ router.get('/', function(req, res){
 });
 //Beware there can be a redundancy between a root article and parent.
 router.get('/:id', function(req, res){
-      var idtest = req.params.id.split('_').join(' ');
+      var idconv = req.params.id.split('_').join(' ');
 
-      console.log(idtest);
-  models.article.findOne({where: {title: idtest}}).then(article => {
+      console.log(idconv);
+  models.article.findOne({where: {title: idconv}}).then(article => {
     models.article.findOne({
       where: {title: article.parent}}).then(parent => {
       models.article.findAll({
@@ -47,7 +47,7 @@ router.get('/:id', function(req, res){
       })
     })
   }
-)
+);
 
 
 module.exports = router;
