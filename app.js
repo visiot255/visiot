@@ -23,6 +23,7 @@ app.use('/resources', router.resources, css);
 app.use('/addarticles', router.addArticles, css);
 app.use('/quiz', router.quiz,css);
 app.use('/aboutus', router.aboutus,css);
+app.use('/modifyarticles', router.modifyArticles, css);
 
 app.listen(3000, () => console.log('Hello world'));
 
