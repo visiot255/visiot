@@ -5,6 +5,10 @@
   ########################################## */
 
 body {
+  min-height:100vh;
+  display : flex;
+  justify-content:space-between;
+  flex-direction: column;
   margin:0;
   background-image:url("../resources/triangles.jpg");
 }
@@ -45,12 +49,50 @@ h4{
   margin-right: 40px;
 }
 
+.core_text{
+  margin-top:50px;
+  margin-right: 20%;
+  margin-left: 20%;
+  border-radius:5px;
+  background-color: #DDD;
+  /*border-left: 5px solid #000;*/
+  box-shadow: 5px 5px 8px grey;
+}
+
+p{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:40px;
+}
+
+/*##########################################
+  ##                                      ##
+  ##                 Header               ##
+  ##                                      ##
+  ########################################## */
+.haut{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  overflow: hidden;
+  background-color: #133665;
+  top:0;
+  box-shadow: 0px /*décalage par rapport à la gauche*/ 5px /*et au haut*/20px grey;
+}
+
+.btn{
+  display:flex;
+}
+
 #titre_vis{
   display:inline;
   color:#E5f3f5 ;
   font-family: Raleway;
   font-weight: Extra-Bold 800;
-  font-size: 80px;
+  font-size: 55pt;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -60,38 +102,15 @@ h4{
   color:#FFFFFF ;
   font-family: Raleway;
   font-weight: Extra-Bold 800;
-  font-size: 80px;
+  font-size: 55pt;
   margin-left: 0px;
   margin-right: 0px;
 }
 
 .container-titre{
-margin-right:calc(100% /4 - 6em);
-margin-left:calc(100% /4 - 7.8em);
-display:inline;
-}
-/*
-h2{
-color:#313131;
-font-family: Nunito;
-font-size:14pt;
-text-align:justify;
-margin-right:15px;
-margin-left:15px;
-}
-*/
-p{
-  text-align: justify;
-  font-family:Raleway;
-  font-size:13pt;
-  color:#133665;
-  margin-right:40px;
-  margin-left:40px;
-}
-
-.cubes{
-  text-align:center;
-  color:#245897
+display:flex;
+flex-direction:column;
+margin:0;
 }
 
 .header-slogan{
@@ -108,24 +127,36 @@ p{
   ##                                      ##
   ########################################## */
 
-.core_text{
-  display: flex;
-  align-self: center;
-  margin-top:50px;
-  margin-right: 20%;
-  margin-left: 20%;
-  border-radius:5px;
-  background-color: #DDD;
-  /*border-left: 5px solid #000;*/
-  box-shadow: 5px 5px 8px grey;
-}
+  .accueil{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:5px;
+    margin-right: 20%;
+    background-color: #DDD;
+    box-shadow: 5px 5px 8px grey;
+  }
 
-.text{
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
+  .navig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+/*##########################################
+  ##                                      ##
+  ##               About us               ##
+  ##                                      ##
+  ########################################## */
+
+  .cubes{
+    text-align:center;
+    color:#245897
+  }
 
 .extraits{
   font-family:Raleway;
@@ -143,30 +174,13 @@ p{
   margin-right:40px;
   margin-left:40px;
 }
-.accueil{
-  height: 440px;
-  margin-left: 20%;
-  margin-top:50px;
-  margin-bottom:50px;
-  border-radius:5px;
-  margin-right: 20%;
-  background-color: #DDD;
-  box-shadow: 5px 5px 8px grey;
-}
-
-.liste-accueil{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
 /*##########################################
   ##                                      ##
   ##               Articles               ##
   ##                                      ##
   ########################################## */
+
 .titre_article{
   text-align: center;
   color:#133665;
@@ -206,7 +220,6 @@ a.button {
     justify-content: space-around;
 }
 
-
 /*##########################################
   ##                                      ##
   ##                 Boutons              ##
@@ -220,7 +233,6 @@ a.button {
 }
 
 .boutonaboutus {
-  float:right;
   padding: 20px 16px;
   color:#FFF;
   height:100%;
@@ -262,7 +274,6 @@ a.button {
 .boutonquiz a:hover {
   background:url("../resources/quizbouton_click2.jpg") no-repeat;
 }
-
 
 .boutonRGPD a {
   border-radius: 5px;
@@ -335,18 +346,6 @@ a.button {
   ##                                      ##
   ########################################## */
 
-.barre_titre{
-  overflow: hidden;
-  display:block;
-  background-color: #133665;
-  position:relative;
-  /* To allow background to be relative */
-  flex-direction: column;
-  top:0;
-  box-shadow: 0px /*décalage par rapport à la gauche*/ 5px /*et au haut*/20px grey;
-}
-
-
 .barre_boutons{
   display:inline;
   position:relative;
@@ -356,7 +355,6 @@ a.button {
 
 .home_button{
   padding: 0px 14px;
-  display:inline;
   cursor: pointer;
   color:#FFF;
 }
@@ -368,26 +366,12 @@ a.button {
 }
 
 .barre_footer{
-  display:block;
+  display:flex;
+  flex-direction:column;
   background-color: #133665;
-  position:relative;
   /* To allow background to be relative */
-  flex-direction: column;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  text-align: center;
-}
-
-.barre_footer_2{
-  display:block;
-  background-color: #133665;
-  position:absolute;
-  /* To allow background to be relative */
-  flex-direction: column;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 1rem;
   text-align: center;
 }
