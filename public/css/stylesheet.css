@@ -50,6 +50,8 @@ h4{
 }
 
 .core_text{
+  display:flex;
+  flex-direction:column;
   margin-top:50px;
   margin-right: 20%;
   margin-left: 20%;
@@ -189,17 +191,19 @@ margin:0;
   font-size: 30pt;
 }
 
+.arbo_left{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
 .arborescence{
-  float:auto;
-  padding-left : 1.7em;
   margin-left : 2%;
-  margin-top : 50px;
-  margin-bottom:50px;
   border-radius:5px;
-  margin-right: 82%;
   background-color: #DDD;
   box-shadow: 5px 5px 8px grey;
   display: flex;
+  flex-direction:column;
   align-self: center;
 }
 
@@ -207,17 +211,8 @@ a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     color: initial;
-}
-
-.container_articles{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 /*##########################################
