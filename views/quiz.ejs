@@ -19,14 +19,19 @@
     </a>
 </div>
 </br>
+<!--début du html-->
     <div id="quizjs"> </div>
     <div id="resultsjs"></div>
     </br>
     <button id="submitjs" style="margin-left:41%; margin-right:41%">Soumettre le quiz </button>
     </br></br></br>
 
+<!--fin du html-->
+
 <script type="text/javascript" >
     var submitButton=document.getElementById('submitjs');
+    
+    //liste des questions-réponses
     var myQuestions = [
         {
         question : "1. Qu’est-ce qu’une donnée personnelle ? (article 4-RGPD)",
@@ -98,7 +103,7 @@
         explanation:`Le responsable doit sur demande pouvoir fournir une copie des données faisant l'objet d'un traitement au client, mais peut demander le paiement « de frais raisonnables basés sur les coûts administratifs pour toute copie supplémentaire demandée par la personne concernée ». En cas d’erreur, le demandeur peut demander, « dans les meilleurs délais », d’obtenir rectification des données inexactes ou incomplètes.
             De plus, si des données ne sont plus nécessaires (principe de minimisation), le consentement de l’intéressé a été retiré, ou si le traitement initial était illicite le demandeur peut faire recours au droit « d’oubli » des données. Ce droit n’est cependant pas absolu. Notamment, il existe des exceptions :
             </br>-lorsque le traitement est nécessaire à la liberté d’expression ou d’information
-            </br>- lorsque le traitement résulte d’une obligation légale.`
+            </br>-lorsque le traitement résulte d’une obligation légale.`
         },
         {
         question:"6. Que précise le RGPD concernant la responsabilité du responsable du traitement ? (article 24-RGPD)",
@@ -186,13 +191,15 @@
         explanation:"Le RGPD est entré en vigueur le 25 mai 2018. Conscient que les changements sont importants, l'Union européenne est cependant indulgente dans les premiers mois de sa mise en application."
         },
     ];
-
+    //construction du quiz
     function buildQuiz (questions, submitButton) {
     function showQuestions(questions ){
         var output=[];
+        //contenu des différents choix possibles
         var answer=[] ;
         for (var i=0; i<(questions.length); i++){
             answer.push([]);
+            //écriture des différents choix
             for (letter in questions[i].answers){
                 answer[i].push(
                     ' <label> </br> <input type="radio" name="question'+i+'"value="'+letter+'" >'
@@ -200,13 +207,15 @@
                         +questions[i].answers[letter]
                     +' </label> '
                 );};
+            //output du html
             output.push('<div class="question"> </br><strong>'+questions[i].question+'</strong></div>'+'<div class="answers">'+answer[i].join('')+'</div>');
         };
         document.getElementById('quizjs').innerHTML=output.join('');
 
-
+    //construction des réponses après le clic
     function showResults(questions){
         var userAnswer='';
+        //compteur pour les solutions justes
         var numCorrect=0;
         var results=[];
         output=[];
@@ -216,6 +225,8 @@
             resultOutput.push('<div class="question"> </br> <strong>'+questions[i].question+'</strong></div>'+'<div class="answers">')
             var answerContainers = document.getElementById('quizjs').querySelectorAll('.answers');
             userAnswer=( answerContainers[i].querySelector('input[name=question'+i+']:checked')||{} ).value;
+            //si la réponse est juste, seule l'affirmation juste est affichée en vert.
+            //pour une réponse fausse, on met toutes les réponses en reouge sauf la réponse correcte
             if (userAnswer===questions[i].correctAnswer){
                 numCorrect++;
                 for (letter in questions[i].answers){
@@ -248,11 +259,13 @@
                 }
             }
             resultOutput.push(results[i].join(''));
+            //affichage de la page des réponses avec le score au début
             resultOutput.push('</div>'+'<div class="explication"> </br><strong> Réponse :</strong></br>'+ questions[i].explanation+'</div>') ;
         }
         document.getElementById('resultsjs').innerHTML='</br><div style="text-align:center;font-family:Nunito"><strong>'+numCorrect+' sur '+questions.length+'</strong></div></br>'+resultOutput.join('');
         document.getElementById('quizjs').innerHTML=output;
     }
+    //on montre les réponses au click sur le bouton Submit
     submitButton.onclick=function(){
         showResults(questions);
         document.getElementById('submitjs').innerHTML="<a href=<%= config.urlAccueil %> >Retour à la page d'accueil</a>";
@@ -261,6 +274,7 @@
     showQuestions(questions);
     };
 
+    
     //display quiz
     buildQuiz(myQuestions,submitButton);
 
