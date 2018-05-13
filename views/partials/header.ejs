@@ -1,11 +1,18 @@
+<!--Container for the header (the whole site works with flexbox) -->
 <div class="haut">
+    <!--Bouton to come back on the home page-->
     <a class="btn" href=<%= config.urlAccueil %>  >
         <i class="home_button fa fa-home fa-5x"></i>
     </a>
+    <!--Container for the title-->
     <div class="container-titre">
+        <!--VIS and IOT don't have the same css-->
         <div style="text-align:center"><h1 id="titre_vis">Vis</h1><h1 id="titre_iot">IoT</h1></div>
         <p class="header-slogan"> Site de ressources pour développeurs exigeants. </br> Des articles complets pour des objets connectés respectueux de la vie privée. </p>
     </div>
+    <!--Bouton to go on the page "about us" -->
     <a class="btn" href=<%= config.urlAboutus %>><i class="boutonaboutus fa fa-users fa-4x"></i></a>
 </div>
+
+<!--The fa-fa used in buttons means that we use font awesome buttons for our website-->
 
