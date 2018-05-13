@@ -8,21 +8,9 @@
         <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-<div class="container_articles">
-    <%- include('partials/header') %>
-    <div class="core_text">
-      <h1 class="titre_article"> <%= article.title %></h1>
-      <%- content %>
-      <br/>
-      <p> Si vous souhaitez ajouter un article de même parent que cet article courant, cliquez ici : </p>
-      <a href=<%= '../addarticles/' + article.parent.split(' ').join('_') %> class="button"> Ajouter un article de même parent</a>
-      <p> Si vous souhaitez ajouter un article de parent cet article courant, cliquez ici :
-      <br/><br/>
-      <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button"> AJouter un article  descendant</a>
-      <br/><br/>
-    </div>
-
-    <div class ="arborescence">
+<%- include('partials/header') %>
+<div class="arbo_left">
+  <div class ="arborescence">
       <div class ="root_articles">
         <!-- The following is rather heavy writing but it is to avoid redundancy -->
         <p> root </p>
@@ -50,8 +38,19 @@
       <% siblings.forEach(function(sibling){ %>
         <a href=<%=  sibling.title.split(' ').join('_') %>><%= sibling.title %></a><br>
       <% }) %>
-    </div>7
 </div>
-      <%- include('partials/footer') %>
+  <div class="core_text">
+      <h1 class="titre_article"> <%= article.title %></h1>
+      <%- content %>
+      <br/>
+      <p> Si vous souhaitez ajouter un article de même parent que cet article courant, cliquez ici : </p>
+      <a href=<%= '../addarticles/' + article.parent.split(' ').join('_') %> class="button"> Ajouter un article de même parent</a>
+      <p> Si vous souhaitez ajouter un article de parent cet article courant, cliquez ici :
+      <br/><br/>
+      <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button"> AJouter un article  descendant</a>
+      <br/><br/>
+</div>
+</div>
+<%- include('partials/footer') %>
     </body>
 </html>

@@ -194,17 +194,19 @@ margin:0;
   font-size: 30pt;
 }
 
+.arbo_left{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
 .arborescence{
-  float:auto;
-  padding-left : 1.7em;
   margin-left : 2%;
-  margin-top : 50px;
-  margin-bottom:50px;
   border-radius:5px;
-  margin-right: 82%;
   background-color: #DDD;
   box-shadow: 5px 5px 8px grey;
   display: flex;
+  flex-direction:column;
   align-self: center;
 }
 
@@ -212,7 +214,6 @@ a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     color: initial;
 }
@@ -234,7 +235,6 @@ a.button {
   text-align: justify;
   font-family:Nunito Sans;
   font-size:13pt;
-  color:#133665;
   padding-right:30px;
   padding-left:30px;
 }
