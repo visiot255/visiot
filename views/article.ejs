@@ -45,10 +45,12 @@
       <br/>
       <p> Si vous souhaitez ajouter un article de même parent que cet article courant, cliquez ici : </p>
       <a href=<%= '../addarticles/' + article.parent.split(' ').join('_') %> class="button"> Ajouter un article de même parent</a>
-      <p> Si vous souhaitez ajouter un article de parent cet article courant, cliquez ici :
+      <p> Si vous souhaitez ajouter un article de parent cet article courant, cliquez ici : </p>
       <br/><br/>
-      <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button"> AJouter un article  descendant</a>
+      <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button"> Ajouter un article descendant</a>
       <br/><br/>
+      <p> Pour modifier cet article cliquez ici </p>
+      <a href=<%= '../modifyarticles/' + article.title.split(' ').join('_') %> class="button"> Modifier cet article </a>
 </div>
 </div>
 <%- include('partials/footer') %>
