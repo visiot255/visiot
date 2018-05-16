@@ -11,6 +11,7 @@ const modifyOld = function(req, res){
 
   models.article.update({content: content}, {where: {title: title}}).then(result =>{
     console.log(result);
+    res.redirect(config.urlAccueil);
   });
 };
 

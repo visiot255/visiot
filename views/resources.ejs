@@ -10,6 +10,7 @@
     </head>
     <body>
       <%- include('partials/header') %>
+<<<<<<< HEAD
     <div class="resources">
     
       </div><div class="image1">
@@ -29,6 +30,19 @@
         <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
         <% }) %>
       </div>-->
+=======
+<div class="arbo_left">
+  <div class="arborescence">
+    <% root.forEach(function(root){ %>
+    <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
+    <% }) %>
+  </div>
+      <div class="core_text_article">
+        <h1> Bienvenue sur la page d'accueil des articles! </h1>
+      </div>
+
+    </div>
+>>>>>>> df819935155007bfe0a191d63a49411bd8585933
 
 
       <%- include('partials/footer') %>
