@@ -24,7 +24,6 @@ const createNew = function(req, res){
         res.redirect(config.urlAccueil)
     })
     console.log('Article added to the database');
-    alert("Votre article a bien été ajouté à la base de données!");
 };
 
 module.exports = {
