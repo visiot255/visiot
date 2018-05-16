@@ -196,11 +196,11 @@ margin:0;
 }  
 
 .image1{
-
+  background-image: "../resources/protection-des-données.jpg"
 }
 
 .image2{
-  
+  background-image: "../resources/iot.jpg"
 }
 
 /*##########################################

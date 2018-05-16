@@ -6,11 +6,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
         <link rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Raleway:400,800" >
         <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+        <!--script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script-->
     </head>
     <body>
       <%- include('partials/header') %>
-<<<<<<< HEAD
     <div class="resources">
     
       </div><div class="image1">
@@ -30,19 +29,6 @@
         <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
         <% }) %>
       </div>-->
-=======
-<div class="arbo_left">
-  <div class="arborescence">
-    <% root.forEach(function(root){ %>
-    <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
-    <% }) %>
-  </div>
-      <div class="core_text_article">
-        <h1> Bienvenue sur la page d'accueil des articles! </h1>
-      </div>
-
-    </div>
->>>>>>> df819935155007bfe0a191d63a49411bd8585933
 
 
       <%- include('partials/footer') %>
