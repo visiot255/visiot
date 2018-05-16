@@ -10,15 +10,17 @@
     </head>
     <body>
       <%- include('partials/header') %>
-
-      <div class="core_text">
+<div class="arbo_left">
+  <div class="arborescence">
+    <% root.forEach(function(root){ %>
+    <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
+    <% }) %>
+  </div>
+      <div class="core_text_article">
         <h1> Bienvenue sur la page d'accueil des articles! </h1>
       </div>
-      <div class="arborescence">
-        <% root.forEach(function(root){ %>
-        <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
-        <% }) %>
-      </div>
+
+    </div>
 
 
       <%- include('partials/footer') %>
