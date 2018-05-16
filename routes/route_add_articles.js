@@ -14,10 +14,15 @@ router.get('/', function(req,res){
 //Helps creating articles on a par with an article.
 router.get('/:id', function(req,res){
   var idconv = req.params.id.split('_').join(' ');
-  models.article.findOne({where: {title: idconv}}).then(article => {
-    console.log(article.parent);
-    res.render('add_articles', {config: config, article: article});
+  if (idconv = 'root'){
+    res.render('add_articles', {config: config, article: {title: 'root'}});
+  } else {
+    models.article.findOne({where: {title: idconv}}).then(article => {
+      console.log(article.parent);
+      res.render('add_articles', {config: config, article: article});
+
   })
+}
 });
 
 //Calls controller to add the newly defined article to the databse.

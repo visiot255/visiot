@@ -18,16 +18,17 @@
         </div>
       <!-- dynamic markdown interpretor below -->
       <div class="form-group">
-          <textarea class="form-control" id="markdown" name="post_content">
-            <%= article.content %>
-          </textarea>
+          <textarea class="form-control" id="markdown" name="post_content"><%= article.content %></textarea>
       </div>
       <div>
-          <input id='publish' name='publish' type='submit' value='Modifier'>
+          <input id='publish' name='publish' type='submit' value='Modifier' onclick="posted()">
       </div>
   </form>
   <script>
         var simplemde = new SimpleMDE();
+        function posted(){
+          alert("Votre article a bien été modifié!");
+        }
   </script>
   <%- include('partials/footer') %>
     </body>
