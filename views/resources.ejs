@@ -10,17 +10,24 @@
     </head>
     <body>
       <%- include('partials/header') %>
+      <div style="display:flex;flex-direction:column; justify-content:flex-start;">
     <div class="resources">
-    
-      </div><div class="image1">
-
-      </div>
-
-      <div class="image2">
-        
-      </div>
-    
+      <a class="image1" style="text-decoration:none" href=<%= root[0].title.split(' ').join('_') %>>
+          <div>
+              <img src="../public/resources/blur1.jpg">
+                  Ressources et Articles informatifs
+              </div>
+          </div>
+      </a>
+      <a class="image2" style="text-decoration:none" href=<%= root[1].title.split(' ').join('_') %>>
+          <div>
+            <img src="../public/resources/blur1.jpg">
+                  Ressources et Articles informatifs
+              </div>
+          </div>
+      </a>
     </div>
+  </div>
       <!--<div class="core_text">
         <h1> Bienvenue sur la page d'accueil des articles! </h1>
       </div>

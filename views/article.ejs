@@ -13,7 +13,6 @@
   <div class ="arborescence">
       <div class ="root_articles">
         <!-- The following is rather heavy writing but it is to avoid redundancy -->
-        <p> root </p>
         <% root.forEach(function(root){ %>
           <% if (parent) { %>
             <% if (root.title !== parent.title){ %>
@@ -27,19 +26,16 @@
         <% }) %>
       </div>
       <div class="parent_article">
-        <p> parent </p>
         <% if(parent){ %>
           <a href=<%= parent.title.split(' ').join('_') %>><%= parent.title %></a><br>
         <% } %>
       </div>
       <div class="children_articles">
-        <p> children </p>
         <% children.forEach(function(child){ %>
           <a href=<%= child.title.split(' ').join('_') %>><%= child.title %></a><br>
           <% }) %>
       </div>
       <div class="siblings_articles">
-        <p> siblings </p>
         <% siblings.forEach(function(sibling){ %>
           <a href=<%=  sibling.title.split(' ').join('_') %>><%= sibling.title %></a><br>
         <% }) %>
@@ -52,13 +48,13 @@
       <br/>
       <hr>
       <p> Si vous souhaitez ajouter un article de même parent que cet article courant, cliquez ici : </p>
-      <a href=<%= '../addarticles/' + article.parent.split(' ').join('_') %> class="button"> Ajouter un article de même parent</a>
+      <a href=<%= '../addarticles/' + article.parent.split(' ').join('_') %> class="button" style="width:23%"> Ajouter un article de même parent</a>
       <p> Si vous souhaitez ajouter un article de parent cet article courant, cliquez ici : </p>
       <br/><br/>
-      <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button"> Ajouter un article descendant</a>
+      <a href=<%= '../addarticles/' + article.title.split(' ').join('_') %> class="button" style="width:20%"> Ajouter un article descendant</a>
       <br/><br/>
       <p> Pour modifier cet article cliquez ici </p>
-      <a href=<%= '../modifyarticles/' + article.title.split(' ').join('_') %> class="button"> Modifier cet article </a>
+      <a href=<%= '../modifyarticles/' + article.title.split(' ').join('_') %> class="button" style="width:13%; margin-bottom:10px;"> Modifier cet article </a>
 </div>
 </div>
 <%- include('partials/footer') %>
