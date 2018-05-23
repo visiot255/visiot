@@ -12,23 +12,24 @@
       <%- include('partials/header') %>
       <form id="form" method="POST" action="/modifyarticles/modifyOld">
 <!-- all the following forms will be stored in the database -->
-        <p> Vous etes en train de modifier l'article : </p>
-        <div class="form-group " style="padding-top:10px">
-            <input class="form-control" id="post_title" name="post_title" type="text" placeholder="Title" value = "<%= article.title %>" >
-        </div>
+        <div style="background-color:#dfdfdf;">
+          <br>
+          <p> Vous etes en train de modifier l'article : </p>
+          <div class="form-group " style="padding-top:10px">
+              <input class="form-control" id="post_title" name="post_title" type="text" placeholder="Title" value = "<%= article.title %>" >
+          </div>
       <!-- dynamic markdown interpretor below -->
-      <div class="form-group">
-          <textarea class="form-control" id="markdown" name="post_content"><%= article.content %></textarea>
+          <div class="form-group">
+            <textarea class="form-control" id="markdown" name="post_content"><%= article.content %></textarea>
+          </div>
+        <div>
+          <input id='publish' name='publish' type='submit' value='Modifier'>
+          <br><br>
+        </div>
       </div>
-      <div>
-          <input id='publish' name='publish' type='submit' value='Modifier'
-      </div>
-  </form>
+    </form>
   <script>
         var simplemde = new SimpleMDE();
-        function posted(){
-          alert("Votre article a bien été modifié!");
-        }
   </script>
   <%- include('partials/footer') %>
     </body>

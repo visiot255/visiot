@@ -13,10 +13,9 @@ var seq = new Sequelize ('article', secrets.user, secrets.password, {
     idle: 10000
   },
 
-  // Missing things here!
 });
 
-// checks that everything is fine.
+// checks that the connection with the server is established.
 seq
   .authenticate()
   .then(() => {

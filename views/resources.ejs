@@ -10,27 +10,27 @@
     </head>
     <body>
       <%- include('partials/header') %>
-      <div style="display:flex;flex-direction:column;">
-    <div class="resources">
-      <a class="image1" style="text-decoration:none" href=<%= root[0].title.split(' ').join('_') %>>
-              <img src="resources/blur1.jpg">
-      </a>
-      <a class="image2" style="text-decoration:none" href=<%= root[1].title.split(' ').join('_') %>>
-            <img src="resources/blur2.jpg">
-            <div class="w3-display-middle w3-large">Middle</div>
-      </a>
-    </div>
-  </div>
-      <!--<div class="core_text">
-        <h1> Bienvenue sur la page d'accueil des articles! </h1>
-      </div>
-      <div class="arborescence">
-        <!--<% root.forEach(function(root){ %>
-        <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
-        <% }) %>
-      </div>-->
-
-
+      <div class="arbo_left">
+        <div class ="arborescence">
+            <div class ="root_articles">
+              <!-- The following is rather heavy writing but it is to avoid redundancy -->
+              <a href=<%= root[0].title.split(' ').join('_') %>><%= root[0].title%></a><br>
+              <a href=<%= root[1].title.split(' ').join('_') %>><%= root[1].title%></a><br>
+            </div>
+          </div>
+          <div class="core_text_article">
+            <h2>PRESENTATION</h2>
+            <p>VisIot est un projet d’encyclopédie collective en ligne, récoltant des articles pour accompagner les entreprises et les sensibiliser aux bons réflexes sur la protection des données. Ce projet lancé en collaboration entre des étudiants de CentraleSupélec, Visions, et Latitudes, vise à offrir un contenu librement réutilisable, complet et suffisamment précis.
+            Les rédacteurs des articles de VisIot sont entièrement bénévoles. Ils coordonnent leurs efforts au sein d'une communauté collaborative, sans dirigeant, dans l’espoir de compléter toujours plus ce centre de documentation.</p>
+            <h2>COMMENT NAVIGUER SUR LE SITE </h2>
+            <p>Les articles sont oganisés en arborescence. Il existe plusieurs articles 'root', très généraux qui ont chacun des articles descendants. La naviguation se fait de descendants en descendants, et entre article 'de même niveau'.
+              Vous pouvez visualiser les articles dans la colonne à gauche de la page. Les différents niveaux sont marqués par une indentation.
+            <h2>COMMENT CONTRIBUER ?</h2>
+            <p>Chacun peut publier immédiatement du contenu en ligne, à condition de respecter certaines règles essentielles; par exemple, la vérifiabilité du contenu, l'admissibilité des articles et une attitude cordiale.
+            Pour cela il vous suffit de cliquer sur les boutons « Ajouter un article » que vous trouverez dans les différentes sections.
+            Nous espérons que vous apprécierez et recommanderez VisIot ! Bonne utilisation !</p>
+          </div>
+        </div>
       <%- include('partials/footer') %>
     </body>
 </html>

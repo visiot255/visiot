@@ -3,8 +3,8 @@ var config = require('../config');
 var models = require('../models/models');
 var Sequelize = require('sequelize');
 
+//Function that adds a new article to the database
 const createNew = function(req, res){
-    console.log(req.body);
     var title = req.body.post_title;
     var titleId = title.split(' ').join('_');
     var content = req.body.post_content;
