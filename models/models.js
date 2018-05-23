@@ -1,7 +1,7 @@
 var Sequelize = require('sequelize');
 var db = require('./database');
 
-
+//defines the article table.
 var article = db.define('article', {
   title: {
     type: Sequelize.STRING,
