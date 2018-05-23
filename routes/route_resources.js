@@ -12,7 +12,6 @@ router.get('/', function(req, res){
     where: {parent: 'root'}}).then(root => {
       res.render('resources', {config: config, root: root});
     })
-
 });
 //Beware there can be a redundancy between a root article and parent.
 router.get('/:id', function(req, res){
