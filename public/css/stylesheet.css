@@ -452,15 +452,27 @@ a.button {
   color:#FFF;
 }
 
+.empty{
+  flex:1;
+}
+
 .footer-text{
+  flex:1;
   text-align:center;
   color:white;
    font-family:Raleway;
 }
+ 
+.mail{
+  flex:1;
+  font-family:Raleway;
+  text-align:right; 
+  color:white;
+}
 
 .barre_footer{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
   background-color: #133665;
   /* To allow background to be relative */
   bottom: 0;
