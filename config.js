@@ -1,9 +1,9 @@
 const config = {
-  urlAccueil: 'http://localhost:3000/',
-  urlResources: 'http://localhost:3000/resources',
-  urlAddArticles: 'http://localhost:3000/adminaddarticles',
-  urlQuiz:'http://localhost:3000/quiz',
-  urlAboutus:'http://localhost:3000/aboutus',
+  urlAccueil: 'https://visiot.herokuapp.com/',
+  urlResources: 'https://visiot.herokuapp.com/resources',
+  urlAddArticles: 'https://visiot.herokuapp.com/adminaddarticles',
+  urlQuiz:'https://visiot.herokuapp.com/quiz',
+  urlAboutus:'https://visiot.herokuapp.com/aboutus',
 };
 
 module.exports = config;
