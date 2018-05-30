@@ -30,6 +30,11 @@
           <a href=<%= parent.title.split(' ').join('_') %>><%= parent.title %></a><br>
         <% } %>
       </div>
+      <div class="current_article">
+        <% if(parent){ %>
+          <a href=<%= article.title.split(' ').join('_') %>><%= article.title %></a><br>
+        <% } %>
+      </div>
       <div class="children_articles">
         <% children.forEach(function(child){ %>
           <a href=<%= child.title.split(' ').join('_') %>><%= child.title %></a><br>
