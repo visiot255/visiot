@@ -76,6 +76,15 @@ hr{
   width: 80%
 }
 
+li{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:40px;
+}
+
 /*##########################################
   ##                                      ##
   ##                 Header               ##
