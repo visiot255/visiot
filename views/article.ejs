@@ -16,26 +16,26 @@
         <% root.forEach(function(root){ %>
           <% if (parent) { %>
             <% if (root.title !== parent.title){ %>
-              <a href=<%= root.title.split(' ').join('_') %> style="text-align:left"><%= root.title%></a><br>
+              <li href=<%= root.title.split(' ').join('_') %> style="text-align:left"><%= root.title%></li><br>
             <% } %>
           <% } else { %>
             <% if (root.title !== article.title){ %>
-              <a href=<%= root.title.split(' ').join('_') %> style="text-align:left"><%= root.title%></a><br>
+              <li href=<%= root.title.split(' ').join('_') %> style="text-align:left"><%= root.title%></li><br>
             <% } %>
           <% } %>
         <% }) %>
       </div>
       <div class="parent_article">
         <% if(parent){ %>
-          <a href=<%= parent.title.split(' ').join('_') %> style="text-align:left"><%= parent.title %></a><br>
+          <li href=<%= parent.title.split(' ').join('_') %> style="text-align:left"><%= parent.title %></li><br>
         <% } %>
       </div>
       <div class="current_article">
-        <a>- <%= article.title %></a><br>
+        <li  style="text-align:left"><%= article.title %></li><br>
       </div>
       <div class="children_articles">
         <% children.forEach(function(child){ %>
-          <a href=<%= child.title.split(' ').join('_') %> style="text-align:left"><%= child.title %></a><br>
+          <li href=<%= child.title.split(' ').join('_') %> style="text-align:left"><%= child.title %></li><br>
           <% }) %>
       </div>
       <div class="siblings_articles">
