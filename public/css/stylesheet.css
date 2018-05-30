@@ -286,7 +286,7 @@ margin:0;
   margin-left:50px;
 }
 
-.current_article{
+.siblings_articles{
   text-align: justify;
   font-family:Nunito Sans;
   font-size:13pt;
@@ -295,22 +295,13 @@ margin:0;
   margin-left:60px;
 }
 
-.siblings_articles{
-  text-align: justify;
-  font-family:Nunito Sans;
-  font-size:13pt;
-  color:#133665;
-  margin-right:40px;
-  margin-left:70px;
-}
-
 .children_articles{
   text-align: justify;
   font-family:Nunito Sans;
   font-size:13pt;
   color:#133665;
   margin-right:40px;
-  margin-left:80px;
+  margin-left:70px;
 }
 a.button {
     -webkit-appearance: button;
@@ -322,6 +313,11 @@ a.button {
     text-align: center;
 }
 
+.button{
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+}
 .form-group{
   background-color: #dfdfdf;
 }
