@@ -1,9 +1,8 @@
 var Sequelize = require('sequelize');
 var config = require ('../config');
-var secrets = require('../secrets');
 
 var seq = new Sequelize ('visiot', 'visiot', 'password', {
-  host: secrets.host,
+  host: 'db4free.net',
   dialect: 'mysql',
   operatorAliases: false,
   pool: {
