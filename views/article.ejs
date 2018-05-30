@@ -16,31 +16,31 @@
         <% root.forEach(function(root){ %>
           <% if (parent) { %>
             <% if (root.title !== parent.title){ %>
-              <li href=<%= root.title.split(' ').join('_') %> style="text-align:left"><%= root.title%></li><br>
+              <li style="text-align:left, margin : 0"><a href=<%= root.title.split(' ').join('_') %> ><%= root.title%></a></li><br>
             <% } %>
           <% } else { %>
             <% if (root.title !== article.title){ %>
-              <li href=<%= root.title.split(' ').join('_') %> style="text-align:left"><%= root.title%></li><br>
+              <li style="text-align:left, margin : 0"><a href=<%= root.title.split(' ').join('_') %> ><%= root.title%></a></li><br>
             <% } %>
           <% } %>
         <% }) %>
       </div>
       <div class="parent_article">
         <% if(parent){ %>
-          <li href=<%= parent.title.split(' ').join('_') %> style="text-align:left"><%= parent.title %></li><br>
+          <li style="text-align:left, margin : 0"><a href=<%= parent.title.split(' ').join('_') %> ><%= parent.title %></a></li><br>
         <% } %>
       </div>
       <div class="current_article">
-        <li  style="text-align:left"><%= article.title %></li><br>
+        <li style="text-align:left, margin : 0"><a ><%= article.title %></a></li><br>
       </div>
       <div class="children_articles">
         <% children.forEach(function(child){ %>
-          <li href=<%= child.title.split(' ').join('_') %> style="text-align:left"><%= child.title %></li><br>
+          <li style="text-align:left, margin : 0"><a href=<%= child.title.split(' ').join('_') %> ><%= child.title %></a></li><br>
           <% }) %>
       </div>
       <div class="siblings_articles">
         <% siblings.forEach(function(sibling){ %>
-          <li href=<%= sibling.title.split(' ').join('_') %> style="text-align:left"><%= sibling.title %></li><br>
+          <li style="text-align:left, margin : 0"><a href=<%= sibling.title.split(' ').join('_') %> ><%= sibling.title %></a></li><br>
         <% }) %>
       </div>
     </div>
