@@ -464,6 +464,7 @@ a.button {
   padding: 0px 14px;
   cursor: pointer;
   color:#FFF;
+  text-decoration:none;
 }
 
 .empty{
