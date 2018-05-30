@@ -16,31 +16,31 @@
         <% root.forEach(function(root){ %>
           <% if (parent) { %>
             <% if (root.title !== parent.title){ %>
-              <li style="text-align:left, margin : 0"><a href=<%= root.title.split(' ').join('_') %> ><%= root.title%></a></li><br>
+              <li style="text-align:left; margin : 0"><a href=<%= root.title.split(' ').join('_') %> ><%= root.title%></a></li><br>
             <% } %>
           <% } else { %>
             <% if (root.title !== article.title){ %>
-              <li style="text-align:left, margin : 0"><a href=<%= root.title.split(' ').join('_') %> ><%= root.title%></a></li><br>
+              <li style="text-align:left; margin : 0"><a href=<%= root.title.split(' ').join('_') %> ><%= root.title%></a></li><br>
             <% } %>
           <% } %>
         <% }) %>
       </div>
       <div class="parent_article">
         <% if(parent){ %>
-          <li style="text-align:left, margin : 0"><a href=<%= parent.title.split(' ').join('_') %> ><%= parent.title %></a></li><br>
+          <li style="text-align:left; margin : 0"><a href=<%= parent.title.split(' ').join('_') %> ><%= parent.title %></a></li><br>
         <% } %>
       </div>
       <div class="current_article">
-        <li style="text-align:left, margin : 0"><a ><%= article.title %></a></li><br>
+        <li style="text-align:left; margin : 0"><a ><%= article.title %></a></li><br>
       </div>
       <div class="children_articles">
         <% children.forEach(function(child){ %>
-          <li style="text-align:left, margin : 0"><a href=<%= child.title.split(' ').join('_') %> ><%= child.title %></a></li><br>
+          <li style="text-align:left; margin : 0"><a href=<%= child.title.split(' ').join('_') %> ><%= child.title %></a></li><br>
           <% }) %>
       </div>
       <div class="siblings_articles">
         <% siblings.forEach(function(sibling){ %>
-          <li style="text-align:left, margin : 0"><a href=<%= sibling.title.split(' ').join('_') %> ><%= sibling.title %></a></li><br>
+          <li style="text-align:left; margin : 0"><a href=<%= sibling.title.split(' ').join('_') %> ><%= sibling.title %></a></li><br>
         <% }) %>
       </div>
     </div>
