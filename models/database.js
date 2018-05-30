@@ -2,7 +2,7 @@ var Sequelize = require('sequelize');
 var config = require ('../config');
 var secrets = require('../secrets');
 
-var seq = new Sequelize ('article', secrets.user, secrets.password, {
+var seq = new Sequelize ('visiot', 'visiot', 'password', {
   host: secrets.host,
   dialect: 'mysql',
   operatorAliases: false,
