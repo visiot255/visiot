@@ -16,18 +16,18 @@
         <% root.forEach(function(root){ %>
           <% if (parent) { %>
             <% if (root.title !== parent.title){ %>
-              <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
+              <a href=<%= root.title.split(' ').join('_') %>>- <%= root.title%></a><br>
             <% } %>
           <% } else { %>
             <% if (root.title !== article.title){ %>
-              <a href=<%= root.title.split(' ').join('_') %>><%= root.title%></a><br>
+              <a href=<%= root.title.split(' ').join('_') %>>- <%= root.title%></a><br>
             <% } %>
           <% } %>
         <% }) %>
       </div>
       <div class="parent_article">
         <% if(parent){ %>
-          <a href=<%= parent.title.split(' ').join('_') %>><%= parent.title %></a><br>
+          <a href=<%= parent.title.split(' ').join('_') %>>- <%= parent.title %></a><br>
         <% } %>
       </div>
       <div class="current_article">
@@ -35,12 +35,12 @@
       </div>
       <div class="children_articles">
         <% children.forEach(function(child){ %>
-          <li><a href=<%= child.title.split(' ').join('_') %>><%= child.title %></a><br></li>
+          <a href=<%= child.title.split(' ').join('_') %>>- <%= child.title %></a><br>
           <% }) %>
       </div>
       <div class="siblings_articles">
         <% siblings.forEach(function(sibling){ %>
-          <a href=<%= sibling.title.split(' ').join('_') %>><%= sibling.title %></a><br>
+          <a href=<%= sibling.title.split(' ').join('_') %>>- <%= sibling.title %></a><br>
         <% }) %>
       </div>
     </div>
