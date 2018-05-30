@@ -31,9 +31,7 @@
         <% } %>
       </div>
       <div class="current_article">
-        <% if(parent){ %>
-          <a href=<%= article.title.split(' ').join('_') %>><%= article.title %></a><br>
-        <% } %>
+        <a href=<%= article.title.split(' ').join('_') %>><%= article.title %></a><br>
       </div>
       <div class="children_articles">
         <% children.forEach(function(child){ %>
