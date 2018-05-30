@@ -25,6 +25,6 @@ app.use('/quiz', router.quiz, publicFiles);
 app.use('/aboutus', router.aboutus, publicFiles);
 app.use('/modifyarticles', router.modifyArticles, publicFiles);
 
-app.listen(3000, () => console.log('Hello world'));
+app.listen(process.env.PORT || 3000, () => console.log('Hello world'));
 
 module.exports = app;
