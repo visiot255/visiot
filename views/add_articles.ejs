@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" , href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+        <link rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Raleway:400,800" >
+        <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    </head>
+    <body>
+      <%- include('partials/header') %>
+      <form id="form" method="POST" action="/addarticles/createNew">
+<!-- all the following forms will be stored in the database -->
+      <div class="form-group " style="padding-top:10px">
+          <input class="form-control" id="post_title" name="post_title" type="text" placeholder="Title">
+      </div>
+      <div class="form-text"><br/> Donner 'root' comme parent à votre article si ne souhaitez pas lui donner un parent. <br/> <br/></div>
+      <div class="form-group " style="padding-top:10px">
+        <!-- If someone wants to add a new article with the same parent as another
+      the parent's title will be displayed right on top of the form for the parent's name -->
+      <% if (article) { %>
+        <input class="form-control" id="post_parent" name="post_parent" type="text" placeholder="Parent" value="<%= article.title %>">
+        <% } %>
+      </div>
+      <!-- dynamic markdown interpretor below -->
+      <div class="form-group">
+          <textarea class="form-control" id="markdown" name="post_content"></textarea>
+      </div>
+      <div class="form-text">
+          <input id='publish' name='publish' type='submit' value='Publish'>
+      </div>
+  </form>
+  <script>
+        var simplemde = new SimpleMDE();
+  </script>
+  <%- include('partials/footer') %>
+    </body>
+</html>

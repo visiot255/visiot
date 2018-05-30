@@ -1,0 +1,482 @@
+/*##########################################
+  ##                                      ##
+  ##                 Général              ##
+  ##                                      ##
+  ########################################## */
+
+body {
+  min-height:100vh;
+  display : flex;
+  justify-content:space-between;
+  flex-direction: column;
+  margin:0;
+  background-image:url("../resources/triangles.jpg");
+}
+
+h1{
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 30pt;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h2{
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 25pt;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h3{
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 20pt;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h4{
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 17pt;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.core_text{
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin-top:50px;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom:50px;
+  border-radius:5px;
+  background-color: #DDD;
+  /*border-left: 5px solid #000;*/
+  box-shadow: 5px 5px 8px grey;
+}
+
+p{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:40px;
+}
+
+hr{
+  width: 80%
+}
+
+/*##########################################
+  ##                                      ##
+  ##                 Header               ##
+  ##                                      ##
+  ########################################## */
+.haut{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  overflow: hidden;
+  background-color: #133665;
+  top:0;
+  box-shadow: 0px /*décalage par rapport à la gauche*/ 5px /*et au haut*/20px grey;
+}
+
+.btn{
+  display:flex;
+}
+
+#titre_vis{
+  display:inline;
+  color:#E5f3f5 ;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 55pt;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#titre_iot{
+  display:inline;
+  color:#FFFFFF ;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 55pt;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-titre{
+display:flex;
+flex-direction:column;
+margin:0;
+}
+
+.header-slogan{
+  color:#CCC;
+  font-family: Raleway;
+  font-style: italic;
+  font-size:12pt;
+  text-align:center;
+}
+
+/*##########################################
+  ##                                      ##
+  ##                 Accueil              ##
+  ##                                      ##
+  ########################################## */
+
+  .accueil{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left: 20%;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:5px;
+    margin-right: 20%;
+    background-color: #DDD;
+    box-shadow: 5px 5px 8px grey;
+  }
+
+  .navig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+/*##########################################
+  ##                                      ##
+  ##               About us               ##
+  ##                                      ##
+  ########################################## */
+
+  .cubes{
+    text-align:center;
+    color:#245897
+  }
+
+.extraits{
+  font-family:Raleway;
+  font-style: italic;
+  font-size:12pt;
+  color:#245897;
+  margin-right:40px;
+  margin-left:40px
+}
+
+.references{
+  font-family:Raleway;
+  font-size:11pt;
+  color:#245897;
+  margin-right:40px;
+  margin-left:40px;
+}
+
+/*##########################################
+  ##                                      ##
+  ##             Ressources               ##
+  ##                                      ##
+  ########################################## */
+
+.resources{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+.image1{
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image2{
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+/*##########################################
+  ##                                      ##
+  ##               Articles               ##
+  ##                                      ##
+  ########################################## */
+
+.titre_article{
+  text-align: center;
+  color:#133665;
+  font-family: Raleway;
+  font-weight: Extra-Bold 800;
+  font-size: 30pt;
+}
+
+.arbo_left{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.core_text_article{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  margin-top:50px;
+  margin-right: 5%;
+  margin-left: 1%;
+  margin-bottom:50px;
+  border-radius:5px;
+  background-color: #DDD;
+  /*border-left: 5px solid #000;*/
+  box-shadow: 5px 5px 8px grey;
+}
+
+.arborescence{
+  margin-left : 2%;
+  border-radius:5px;
+  background-color: #DDD;
+  box-shadow: 5px 5px 8px grey;
+  display: flex;
+  flex-direction:column;
+  align-self: start;
+  margin-top: 50px;
+  flex-basis: 30%;
+  justify-content: flex-start;
+  margin-right: 1%
+}
+
+.root_articles{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:40px;
+}
+
+.parent_article{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:50px;
+}
+
+.siblings_articles{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:60px;
+}
+
+.children_articles{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:70px;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    margin-left:40px;
+    text-align: center;
+}
+
+.form-group{
+  background-color: #dfdfdf;
+}
+
+.form-text{
+  background-color: #dfdfdf;
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  padding-right:30px;
+  padding-left:30px;
+}
+/*##########################################
+  ##                                      ##
+  ##                 Boutons              ##
+  ##                                      ##
+  ########################################## */
+
+.txtonboutons{
+  padding:5px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#FFF;
+  font-size: 16pt;
+  font-family: Nunito;
+}
+
+.boutonaboutus {
+  padding: 20px 16px;
+  color:#FFF;
+  height:100%;
+  width:calc(max-content(15%,50px))
+}
+
+.boutonressources {
+  display: flex;
+  width: 280px;
+  height: 120px;
+  align-items: center;
+  text-align: center;
+  background:url("../resources/boutonresources_unclick2.jpg") no-repeat;
+  border-radius: 5%;
+}
+
+.boutonressources a {
+  text-decoration:none;
+}
+
+.boutonquiz{
+  display:flex;
+  width: 280px;
+  height: 120px;
+  align-items: center;
+  text-align: center;
+  background:url("../resources/boutonquiz_unclick2.jpg") no-repeat;
+  border-radius: 5%;
+}
+
+.boutonquiz a {
+  text-decoration:none;
+}
+
+.boutonRGPD a {
+  border-radius: 5px;
+  width:400px;
+  height:149px;
+  margin-left:calc(50% - 210px);
+  display: flex;
+  background:url("../resources/banner2.jpg") no-repeat;
+  text-decoration:none;
+}
+
+/*##########################################
+  ##                                      ##
+  ##                 Quiz                 ##
+  ##                                      ##
+  ########################################## */
+
+  .correct{
+    color:#03A73A;
+    text-align:justify;
+  }
+
+  .correct2{
+    text-align:justify;
+  }
+  .false{
+    color:#AD0000;
+    text-align:justify;
+  }
+
+  .question{
+    font-family:Nunito;
+    font-size:12pt;
+    text-align:justify;
+    margin-right:30px;
+  }
+
+  .answers{
+    font-family:Nunito Sans;
+    font-size:11pt;
+    text-align:justify;
+    margin-right:30px;
+  }
+
+  .explication{
+    font-family:Nunito Sans;
+    font-size:11pt;
+    text-align:justify;
+    margin-right:30px;
+    color:#757575;
+  }
+
+
+.liste-quiz{
+  margin-bottom:50px;
+  padding-left: 1.7em;
+  position: relative;
+  display:block;
+  margin-left: 20%;
+  margin-top:50px;
+  border-radius:5px;
+  margin-right: 20%;
+  background-color: #DDDDDD;
+  box-shadow: 5px 5px 8px grey;
+}
+
+/*##########################################
+  ##                                      ##
+  ##                 BLOCS                ##
+  ##                                      ##
+  ########################################## */
+
+.barre_boutons{
+  display:inline;
+  position:relative;
+  flex-direction: column;
+  top:0;
+}
+
+.home_button{
+  padding: 0px 14px;
+  cursor: pointer;
+  color:#FFF;
+}
+
+.empty{
+  flex:1;
+}
+
+.footer-text{
+  flex:1;
+  text-align:center;
+  color:white;
+   font-family:Raleway;
+}
+ 
+.mail{
+  flex:1;
+  font-family:Raleway;
+  text-align:right; 
+  color:white;
+}
+
+.barre_footer{
+  display:flex;
+  flex-direction:row;
+  background-color: #133665;
+  /* To allow background to be relative */
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}

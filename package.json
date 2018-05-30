@@ -4,12 +4,26 @@
   "description": "Halp me",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git@gitlab.viarezo.fr:sandstorm/IoT_Rec.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mariadb": "0.0.2-security",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "path": "^0.12.7",
+    "sequelize": "^4.37.4",
+    "showdown": "^1.8.6",
+    "simplemde": "^1.11.2"
+  }
 }

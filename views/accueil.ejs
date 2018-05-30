@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" , href="css/stylesheet.css">
+    <link rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Raleway:400,800,400i" >
+    <link rel="stylesheet", href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+<!--Footer-->
+<%- include('partials/header') %>
+<!--Home page. In the whole site, we use the same disposition : a big grey case (core-text) that contains the information. -->
+<div class="core_text">
+    <p><br/></p>
+    <!--The following div helps us to precise the position of the flex-buttons-->
+    <div class="navig" >
+        <!--Both buttons are images, they are stored in public/resources-->
+        <a class="boutonressources" style="text-decoration:none" href=<%= config.urlResources %>>
+            <div>
+                <div class="txtonboutons">
+                    <i class="fa fa-book 2x"></i>
+                    Ressources et Articles informatifs
+                </div>
+            </div>
+        </a>
+        <a class="boutonquiz" style="text-decoration:none" href=<%= config.urlQuiz %> >
+            <div>
+                <div class="txtonboutons">
+                    <i class="fa fa-question 2x"></i>
+                    Testez vos connaissances sur le RGPD
+                </div>
+            </div>
+        </a>
+    </div>
+
+        <p><br/>
+            En mai 2018, le RGPD entre en application et la recherche sur
+            la technologie 5G dans le monde s’intensifie.
+            C’est une période pleine de défis et de possibilités pour
+            tous ceux qui ont à gérer des gros volumes de données.
+        </br>
+        <br/>
+            L’objectif
+            de <strong>VisIoT</strong> est d’informer tous ceux qui s’intéressent à la conception
+            et au déploiement d’objets connectés sur les moyens d’action qui
+            respectent le mieux la vie privée.
+        </br>
+        </p>
+</div>
+<%- include('partials/footer') %>
+</body>
+</html>
