@@ -286,7 +286,7 @@ margin:0;
   margin-left:50px;
 }
 
-.siblings_articles{
+.current_article{
   text-align: justify;
   font-family:Nunito Sans;
   font-size:13pt;
@@ -295,13 +295,22 @@ margin:0;
   margin-left:60px;
 }
 
-.children_articles{
+.siblings_articles{
   text-align: justify;
   font-family:Nunito Sans;
   font-size:13pt;
   color:#133665;
   margin-right:40px;
   margin-left:70px;
+}
+
+.children_articles{
+  text-align: justify;
+  font-family:Nunito Sans;
+  font-size:13pt;
+  color:#133665;
+  margin-right:40px;
+  margin-left:80px;
 }
 a.button {
     -webkit-appearance: button;
