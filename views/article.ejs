@@ -31,16 +31,16 @@
         <% } %>
       </div>
       <div class="current_article">
-        <p><%= article.title %></p><br>
+        <a><%= article.title %></a><br>
       </div>
       <div class="children_articles">
         <% children.forEach(function(child){ %>
-          <a href=<%= child.title.split(' ').join('_') %>><%= child.title %></a><br>
+          <li><a href=<%= child.title.split(' ').join('_') %>><%= child.title %></a><br></li>
           <% }) %>
       </div>
       <div class="siblings_articles">
         <% siblings.forEach(function(sibling){ %>
-          <a href=<%=  sibling.title.split(' ').join('_') %>><%= sibling.title %></a><br>
+          <a href=<%= sibling.title.split(' ').join('_') %>><%= sibling.title %></a><br>
         <% }) %>
       </div>
     </div>
